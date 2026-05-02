@@ -1,0 +1,327 @@
+/* ============================================================
+   Interactive Node-Star Network page
+   ============================================================ */
+
+.network-page {
+  /* widen the wrapper on this page only */
+}
+
+.network-page .site-wrapper.network-wrapper {
+  max-width: 1200px;
+}
+
+.network-hero {
+  padding: 2rem 0 1rem;
+}
+
+.network-hero h1 {
+  font-size: 1.7rem;
+  color: var(--color-primary);
+  margin-bottom: .35rem;
+}
+
+.network-hero .subtitle {
+  color: var(--color-accent);
+  font-size: 1rem;
+  margin-bottom: .8rem;
+  font-weight: 500;
+}
+
+.network-hero p.lead {
+  color: var(--color-muted);
+  font-size: .95rem;
+  max-width: 760px;
+}
+
+.network-hero .source-links {
+  margin-top: .8rem;
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+}
+
+.network-hero .source-links a {
+  font-size: .82rem;
+  padding: .2rem .6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--color-primary);
+  background: var(--color-surface);
+}
+
+.network-hero .source-links a:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* Toolbar */
+.network-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+
+.view-toggle {
+  display: inline-flex;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.view-toggle button {
+  background: transparent;
+  border: none;
+  padding: .45rem .9rem;
+  font-size: .85rem;
+  color: var(--color-muted);
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.view-toggle button.active {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.view-toggle button:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+.network-hint {
+  font-size: .8rem;
+  color: var(--color-muted);
+}
+
+/* Main layout */
+.network-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .network-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.network-canvas {
+  position: relative;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 560px;
+}
+
+.network-canvas svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  min-height: 560px;
+}
+
+.network-canvas .canvas-helper {
+  position: absolute;
+  bottom: .8rem;
+  left: 1rem;
+  font-size: .75rem;
+  color: var(--color-muted);
+  pointer-events: none;
+}
+
+.network-canvas .back-button {
+  position: absolute;
+  top: .8rem;
+  left: .8rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: .35rem .7rem;
+  border-radius: 6px;
+  font-size: .8rem;
+  color: var(--color-muted);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.network-canvas .back-button:hover {
+  color: var(--color-primary);
+  border-color: var(--color-accent);
+}
+
+/* Sidebar */
+.network-sidebar {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  align-self: start;
+  font-size: .9rem;
+}
+
+.network-sidebar h3 {
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin-bottom: .8rem;
+}
+
+.network-sidebar h4 {
+  font-size: .85rem;
+  margin: 1rem 0 .4rem;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.network-sidebar ul {
+  list-style: disc;
+  padding-left: 1.1rem;
+  color: var(--color-muted);
+  font-size: .82rem;
+}
+
+.network-sidebar ul li {
+  margin-bottom: .15rem;
+}
+
+.layer-row {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  margin-bottom: .4rem;
+  font-size: .85rem;
+  color: var(--color-text);
+}
+
+.layer-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.node-header {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  margin-bottom: .4rem;
+}
+
+.node-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: .82rem;
+  flex-shrink: 0;
+}
+
+.node-title {
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.25;
+  font-size: .95rem;
+}
+
+.node-sublabel {
+  font-size: .75rem;
+  color: var(--color-muted);
+}
+
+.edge-list {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.edge-list button {
+  text-align: left;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: .3rem .5rem;
+  font-size: .76rem;
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+.edge-list button:hover {
+  border-color: var(--color-accent);
+}
+
+.edge-list .edge-id {
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.edge-list .edge-label {
+  color: var(--color-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.empty-edges {
+  font-size: .76rem;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.sidebar-divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 1rem 0 .6rem;
+}
+
+.view-star-btn {
+  margin-top: 1rem;
+  width: 100%;
+  background: var(--color-primary);
+  color: #fff;
+  padding: .55rem;
+  border: none;
+  border-radius: 6px;
+  font-size: .85rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.view-star-btn:hover {
+  background: var(--color-accent);
+}
+
+/* SVG node hover */
+.node-group { cursor: pointer; }
+.node-group circle { transition: r .15s ease; }
+.node-group:hover circle.node-bg { filter: brightness(1.1); }
+
+/* Sidebar legend section */
+.sidebar-section + .sidebar-section {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}

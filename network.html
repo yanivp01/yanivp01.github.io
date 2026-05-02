@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive node-star network: Global Cambridge intervention supply network for ecosystem scaling — Dr. Yaniv Proselkov." />
+  <title>Ecosystem Scaling Network – Dr. Yaniv Proselkov</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/network.css" />
+</head>
+<body class="network-page">
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="site-wrapper">
+      <a class="site-title" href="index.html">Dr. Yaniv Proselkov</a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bio.html">Bio</a></li>
+          <li><a href="papers.html" class="active">Papers</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Content ===== -->
+  <main>
+    <div class="site-wrapper network-wrapper">
+
+      <section class="network-hero">
+        <h1>Ecosystem Scaling — Interactive Node-Star Network</h1>
+        <div class="subtitle">Global Cambridge intervention supply network</div>
+        <p class="lead">
+          A six-layer production model for systematising startup creation and retaining innovation
+          in the Cambridge ecosystem. Each node is an intervention with its own inputs, efforts,
+          and outputs; together they form a coherent supply network for venture generation.
+          Click a node to highlight its connections; click again to open its node-star view.
+        </p>
+        <div class="source-links">
+          <a href="papers.html#think-tank">← Back to think-tank papers</a>
+          <a href="papers_pdf/think_tank_pieces/Systematising_Startup_Creation_in_Cambridge_A_Five_Layer_Production_Model_for_Retained_Innovation.pdf"
+             target="_blank" rel="noopener noreferrer">⬇ Five-layer production model (PDF)</a>
+          <a href="papers_pdf/think_tank_pieces/AI_Native_Infrastructure_for_Ecosystem_Automation__Fintech_Integration__and_Global_Hub_Connectivity.pdf"
+             target="_blank" rel="noopener noreferrer">⬇ AI-native infrastructure (PDF)</a>
+          <a href="papers_pdf/think_tank_pieces/Scaling%20Businesses%20Out%20of%20Cambridge.pdf"
+             target="_blank" rel="noopener noreferrer">⬇ Scaling businesses out of Cambridge (PDF)</a>
+        </div>
+      </section>
+
+      <div class="network-toolbar">
+        <div class="view-toggle" role="tablist">
+          <button id="btn-view-full" class="active">Full network graph</button>
+          <button id="btn-view-star" disabled>Node-star view</button>
+        </div>
+        <div class="network-hint">Select a node to enable the node-star view.</div>
+      </div>
+
+      <div class="network-layout">
+        <div id="network-canvas" class="network-canvas"></div>
+        <aside id="network-sidebar" class="network-sidebar"></aside>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      © Dr. Yaniv Proselkov · <a href="index.html">Home</a> · <a href="papers.html">Papers</a>
+    </div>
+  </footer>
+
+  <script src="js/network.js"></script>
+</body>
+</html>
