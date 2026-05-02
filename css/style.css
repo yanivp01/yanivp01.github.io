@@ -287,6 +287,24 @@ body {
   text-decoration: underline;
 }
 
+.paper-card .pdf-link {
+  display: inline-block;
+  width: fit-content;
+  margin-top: .2rem;
+  padding: .2rem .6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: .82rem;
+  color: var(--color-primary);
+  background: var(--color-bg);
+}
+
+.paper-card .pdf-link:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
 /* ============================================================
    Footer
    ============================================================ */
