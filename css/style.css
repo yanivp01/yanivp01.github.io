@@ -1,0 +1,317 @@
+/* ============================================================
+   Global Reset & Base Styles
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg:        #f9f7f4;
+  --color-surface:   #ffffff;
+  --color-primary:   #1a3a5c;
+  --color-accent:    #2e7d9e;
+  --color-text:      #2d2d2d;
+  --color-muted:     #6b6b6b;
+  --color-border:    #dde3ea;
+  --radius:          6px;
+  --max-width:       780px;
+  --font-sans:       'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   Layout
+   ============================================================ */
+.site-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ============================================================
+   Header / Navigation
+   ============================================================ */
+.site-header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,.25);
+}
+
+.site-header .site-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.site-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.4rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: rgba(255,255,255,.88);
+  text-decoration: none;
+  font-size: .9rem;
+  transition: color .2s;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ============================================================
+   Hero (homepage)
+   ============================================================ */
+.hero {
+  padding: 4.5rem 0 3rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  color: var(--color-primary);
+  margin-bottom: .5rem;
+  line-height: 1.2;
+}
+
+.hero .subtitle {
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.hero .intro {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  color: var(--color-muted);
+  font-size: 1.05rem;
+}
+
+/* ============================================================
+   Quick-links grid (homepage)
+   ============================================================ */
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.quick-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: box-shadow .2s, transform .15s;
+}
+
+.quick-card:hover {
+  box-shadow: 0 4px 14px rgba(46,125,158,.18);
+  transform: translateY(-2px);
+}
+
+.quick-card .card-icon {
+  font-size: 2rem;
+  margin-bottom: .6rem;
+  display: block;
+}
+
+.quick-card h2 {
+  font-size: 1.05rem;
+  margin-bottom: .3rem;
+}
+
+.quick-card p {
+  font-size: .85rem;
+  color: var(--color-muted);
+}
+
+/* ============================================================
+   Social links (homepage footer-area)
+   ============================================================ */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .55rem 1.2rem;
+  border-radius: 99px;
+  background: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  font-size: .9rem;
+  transition: background .2s;
+}
+
+.social-btn:hover {
+  background: var(--color-accent);
+}
+
+/* ============================================================
+   Page-level section
+   ============================================================ */
+.page-section {
+  padding: 3rem 0 4rem;
+}
+
+.page-section h1 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: .4rem;
+}
+
+.page-section .section-lead {
+  color: var(--color-muted);
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+
+/* ============================================================
+   Bio / CV styles
+   ============================================================ */
+.bio-block {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.75rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bio-block h2 {
+  font-size: 1.15rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  padding-bottom: .4rem;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.bio-block p {
+  margin-bottom: .75rem;
+  color: var(--color-text);
+}
+
+.bio-block p:last-child {
+  margin-bottom: 0;
+}
+
+.bio-block ul {
+  margin: .5rem 0 .75rem 1.25rem;
+}
+
+.bio-block ul li {
+  margin-bottom: .35rem;
+}
+
+/* ============================================================
+   Papers styles
+   ============================================================ */
+.papers-category {
+  margin-bottom: 3rem;
+}
+
+.papers-category h2 {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin-bottom: 1.2rem;
+  padding-bottom: .4rem;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.paper-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  margin-bottom: .9rem;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+
+.paper-card h3 {
+  font-size: .97rem;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.paper-card a {
+  color: var(--color-accent);
+  font-size: .88rem;
+  word-break: break-all;
+  text-decoration: none;
+}
+
+.paper-card a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.site-footer {
+  background: var(--color-primary);
+  color: rgba(255,255,255,.7);
+  text-align: center;
+  padding: 1.4rem 1rem;
+  font-size: .82rem;
+}
+
+.site-footer a {
+  color: rgba(255,255,255,.85);
+}
+
+/* ============================================================
+   Responsive tweaks
+   ============================================================ */
+@media (max-width: 560px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .site-header .site-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
