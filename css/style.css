@@ -276,6 +276,11 @@ body {
   line-height: 1.4;
 }
 
+.paper-card .byline {
+  font-size: .83rem;
+  color: var(--color-muted);
+}
+
 .paper-card a {
   color: var(--color-accent);
   font-size: .88rem;
