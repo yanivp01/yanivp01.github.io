@@ -305,6 +305,36 @@ body {
   text-decoration: none;
 }
 
+.paper-card .ext-link {
+  display: inline-block;
+  width: fit-content;
+  margin-top: .2rem;
+  padding: .2rem .6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: .82rem;
+  color: var(--color-accent);
+  background: var(--color-surface);
+  word-break: normal;
+}
+
+.paper-card .ext-link::before {
+  content: "↗ ";
+  opacity: .7;
+}
+
+.paper-card .ext-link:hover {
+  border-color: var(--color-accent);
+  text-decoration: none;
+  background: var(--color-bg);
+}
+
+/* Group action links horizontally */
+.paper-card .pdf-link,
+.paper-card .ext-link {
+  margin-right: .3rem;
+}
+
 /* ============================================================
    Footer
    ============================================================ */
