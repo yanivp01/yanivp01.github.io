@@ -135,9 +135,9 @@
       "id": "conference-presentations",
       "title": "Conference Presentations",
       "image": {
-        "src": "pictures/P1063396.jpg",
-        "alt": "Yaniv Proselkov speaking on a panel",
-        "caption": "Speaking on a panel."
+        "src": "pictures/yaniv presenting.jpg",
+        "alt": "Yaniv Proselkov presenting at a conference",
+        "caption": "Presenting at a conference."
       },
       "items": [
         {
@@ -169,7 +169,7 @@
       "id": "invited-talks",
       "title": "Invited Talks",
       "image": {
-        "src": "pictures/P1063396.jpg",
+        "src": "pictures/yaniv speaking.jpg",
         "alt": "Yaniv Proselkov speaking on a panel",
         "caption": "Panel discussion, 2026."
       },

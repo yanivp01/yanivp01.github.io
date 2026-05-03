@@ -424,6 +424,14 @@ body {
   text-decoration: underline;
 }
 
+.paper-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .25rem;
+  margin-top: .2rem;
+}
+
 .paper-card .pdf-link {
   display: inline-block;
   width: fit-content;
