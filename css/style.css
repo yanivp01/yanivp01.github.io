@@ -479,12 +479,37 @@ body {
   background: var(--color-primary);
   color: rgba(255,255,255,.7);
   text-align: center;
-  padding: 1.4rem 1rem;
+  padding: 1.6rem 1rem 1.8rem;
   font-size: .82rem;
 }
 
 .site-footer a {
   color: rgba(255,255,255,.85);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-bottom: .9rem;
+}
+
+.footer-links .social-btn {
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.18);
+  padding: .4rem .9rem;
+  font-size: .82rem;
+}
+
+.footer-links .social-btn:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.footer-copy {
+  color: rgba(255,255,255,.6);
 }
 
 /* ============================================================
