@@ -134,6 +134,11 @@
     {
       "id": "conference-presentations",
       "title": "Conference Presentations",
+      "image": {
+        "src": "pictures/P1063396.jpg",
+        "alt": "Yaniv Proselkov speaking on a panel",
+        "caption": "Speaking on a panel."
+      },
       "items": [
         {
           "title": "Enabling Viable Supply Networks with Cooperative Distributed Locally Decentralised Financial Control",
@@ -163,6 +168,11 @@
     {
       "id": "invited-talks",
       "title": "Invited Talks",
+      "image": {
+        "src": "pictures/P1063396.jpg",
+        "alt": "Yaniv Proselkov speaking on a panel",
+        "caption": "Panel discussion, 2026."
+      },
       "items": [
         { "title": "Past, Present, and Future of Impact Investment",
           "byline": "Panellist (2026). Rathbones Wealth Managers, London." },

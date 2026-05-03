@@ -36,16 +36,31 @@
   }
 
   function renderCard(item) {
-    const card = el('div', { class: 'paper-card' });
-    card.appendChild(el('h3', { text: item.title }));
-    if (item.byline) card.appendChild(el('span', { class: 'byline', text: item.byline }));
-    (item.links || []).forEach(link => card.appendChild(renderLink(link)));
+    const card = el('div', { class: 'paper-card' + (item.image ? ' has-image' : '') });
+    if (item.image) {
+      const fig = el('figure', { class: 'paper-thumb' }, [
+        el('img', { src: item.image.src, alt: item.image.alt || '', loading: 'lazy' })
+      ]);
+      card.appendChild(fig);
+    }
+    const body = el('div', { class: 'paper-body' });
+    body.appendChild(el('h3', { text: item.title }));
+    if (item.byline) body.appendChild(el('span', { class: 'byline', text: item.byline }));
+    (item.links || []).forEach(link => body.appendChild(renderLink(link)));
+    card.appendChild(body);
     return card;
   }
 
   function renderCategory(cat) {
     const wrap = el('div', { class: 'papers-category', id: cat.id });
     wrap.appendChild(el('h2', { text: cat.title }));
+    if (cat.image) {
+      const fig = el('figure', { class: 'category-image' }, [
+        el('img', { src: cat.image.src, alt: cat.image.alt || '', loading: 'lazy' })
+      ]);
+      if (cat.image.caption) fig.appendChild(el('figcaption', { text: cat.image.caption }));
+      wrap.appendChild(fig);
+    }
     (cat.items || []).forEach(item => wrap.appendChild(renderCard(item)));
     return wrap;
   }
