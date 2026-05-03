@@ -375,8 +375,9 @@ body {
 
 .bio-portrait img {
   width: 100%;
-  max-width: 320px;
   height: auto;
+  max-height: 420px;
+  object-fit: cover;
   border-radius: var(--radius);
   box-shadow: 0 6px 20px rgba(26, 58, 92, 0.18);
 }
