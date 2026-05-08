@@ -16,6 +16,9 @@
         ResearchGate
       </a>
     </div>
+    <div style="text-align: center; margin-top: 1rem;">
+      <a href="/sitemap.html" style="color: var(--color-text-muted); text-decoration: none; font-size: 0.9rem;">Sitemap</a>
+    </div>
     <p class="footer-copy">&copy; ${new Date().getFullYear()} Dr. Yaniv Proselkov</p>
   `;
 
