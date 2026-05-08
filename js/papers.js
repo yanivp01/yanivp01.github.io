@@ -46,6 +46,7 @@
     const body = el('div', { class: 'paper-body' });
     body.appendChild(el('h3', { text: item.title }));
     if (item.byline) body.appendChild(el('span', { class: 'byline', text: item.byline }));
+    if (item.blurb) body.appendChild(el('p', { class: 'blurb', text: item.blurb }));
     if (item.links && item.links.length) {
       const links = el('div', { class: 'paper-links' });
       item.links.forEach(link => links.appendChild(renderLink(link)));
