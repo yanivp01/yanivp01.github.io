@@ -180,22 +180,22 @@
               "href": "papers_pdf/theses/Triple-Jumping%20over%20Fragmentation%20Epidemics%20and%20Spontaneous%20Adaption.pdf"
             }
           ]
-        }
-      ],
-      {
-        "title": "Exploring bounds of the 3 state misanthrope interacting particle system to ensure stationarity and translation-invariance, with other results",
-        "image": {
-          "src": "pictures/picdots2.png"
         },
-        "byline": "BSc(Hons) Thesis, University of Bristol, Department of Mathematics (2017).",
-        "blurb": "Bachelors's thesis studying the nonstationary behaviour of 3 state misanthropic interacting particle systems.",
-        "links": [
-          {
-            "kind": "pdf",
-            "href": "papers_pdf/theses/Bounding_the_3_state_interacting_particle_misanthrope_process.pdf"
-          }
-        ]
-      }
+        {
+          "title": "Exploring bounds of the 3 state misanthrope interacting particle system to ensure stationarity and translation-invariance, with other results",
+          "image": {
+            "src": "pictures/picdots2.png"
+          },
+          "byline": "BSc(Hons) Thesis, University of Bristol, Department of Mathematics (2017).",
+          "blurb": "Bachelors's thesis studying the nonstationary behaviour of 3 state misanthropic interacting particle systems.",
+          "links": [
+            {
+              "kind": "pdf",
+              "href": "papers_pdf/theses/Bounding_the_3_state_interacting_particle_misanthrope_process.pdf"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "think-tank",
