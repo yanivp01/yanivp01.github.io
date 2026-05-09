@@ -16,6 +16,19 @@
         ResearchGate
       </a>
     </div>
+    <div style="text-align: center; margin-top: 1.5rem; margin-bottom: 1rem;">
+      <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.9;">
+        <circle cx="16" cy="16" r="16" fill="#ffffff"/>
+        <g fill="#0B1B32" stroke="#0B1B32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="16" y1="17" x2="8.5" y2="9"/>
+          <line x1="16" y1="17" x2="23.5" y2="9"/>
+          <line x1="16" y1="17" x2="16" y2="24"/>
+          <circle cx="8.5" cy="9" r="3" stroke="none"/>
+          <circle cx="23.5" cy="9" r="3" stroke="none"/>
+          <circle cx="16" cy="24" r="3" stroke="none"/>
+        </g>
+      </svg>
+    </div>
     <div style="text-align: center; margin-top: 1rem;">
       <a href="/sitemap.html" style="color: var(--color-text-muted); text-decoration: none; font-size: 0.9rem;">Sitemap</a>
     </div>
