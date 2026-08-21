@@ -317,10 +317,23 @@
         {
           "title": "Enabling Viable Supply Networks with Cooperative Distributed Locally Decentralised Financial Control",
           "image": {
-            "src": "pictures/scale_free_supply_chain.png"
+            "src": "pictures/talk_ccs_exeter_2024.jpg",
+            "alt": "Yaniv Proselkov presenting at Conference on Complex Systems Exeter 2024"
           },
           "byline": "Y Proselkov, L Xu, A Brintrup (2024). Conference on Complex Systems & Satellite on Collective Intelligence (AI4CI), Exeter, UK.",
-          "blurb": "Presentation on viable supply networks and cooperative locally decentralised financial control mechanisms."
+          "blurb": "Presentation on viable supply networks and cooperative locally decentralised financial control mechanisms.",
+          "links": [
+            {
+              "kind": "ext",
+              "label": "arXiv Paper \u2197",
+              "href": "https://arxiv.org/abs/2601.13210"
+            },
+            {
+              "kind": "ext",
+              "label": "LinkedIn Update \u2197",
+              "href": "https://www.linkedin.com/feed/update/urn:li:activity:7239325965040979968"
+            }
+          ]
         },
         {
           "title": "Triple-Jumping over Fragmentation, Epidemics, and Spontaneous Adaption",
@@ -500,30 +513,32 @@
         {
           "title": "Supply Chain Artificial Intelligence Laboratory",
           "image": {
-            "src": "pictures/yaniv presenting.jpg"
+            "src": "pictures/talk_turing_aiuk.jpg",
+            "alt": "Supply Chain AI Lab team at AI UK, The Alan Turing Institute"
           },
           "byline": "Speaker (2023). AI UK, The Alan Turing Institute, London.",
           "blurb": "Presented ongoing research into artificial intelligence for supply chains at AI UK.",
           "links": [
             {
               "kind": "ext",
-              "label": "LinkedIn Profile \u2197",
-              "href": "https://www.linkedin.com/in/yaniv-proselkov/"
+              "label": "LinkedIn Post \u2197",
+              "href": "https://www.linkedin.com/posts/activity-7044030722432495617-A39-"
             }
           ]
         },
         {
           "title": "Financial Ripple Effect in Complex Adaptive Supply Networks: An Agent-Based Model",
           "image": {
-            "src": "pictures/broken_lattice.png"
+            "src": "pictures/talk_csh_vienna.png",
+            "alt": "Complexity Science Hub Vienna presentation"
           },
           "byline": "Y Proselkov (2023). Complexity Science Hub, Vienna, Austria; also Kolleno Ltd., London.",
           "blurb": "Invited talk on modeling the propagation of financial distress across supply networks.",
           "links": [
             {
               "kind": "ext",
-              "label": "LinkedIn Profile \u2197",
-              "href": "https://www.linkedin.com/in/yaniv-proselkov/"
+              "label": "LinkedIn Post \u2197",
+              "href": "https://www.linkedin.com/feed/update/urn:li:activity:7057262126783979520"
             }
           ]
         },

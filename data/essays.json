@@ -54,6 +54,24 @@
       "page": "essays/multilayer-thinking-bubble-tricks.html"
     },
     {
+      "id": "a-new-name",
+      "title": "A New Name",
+      "date": "2025-05-06",
+      "summary": "Reflections upon receiving the PhD degree at the University of Cambridge \u2014 what it means to carry a new title, standing on the shoulders of mentors, family, and friends, and wearing the Doctor title as the sum of a 5-year journey.",
+      "cover": {
+        "src": "pictures/yaniv_phd_thesis.jpg",
+        "alt": "Dr. Yaniv Proselkov holding his Cambridge PhD thesis binder"
+      },
+      "tags": [
+        "PhD",
+        "Cambridge",
+        "Reflection",
+        "Academia"
+      ],
+      "linkedin": "https://www.linkedin.com/posts/activity-7325792761838821376--2ri",
+      "page": "essays/a-new-name.html"
+    },
+    {
       "id": "automating-venture-capital",
       "title": "Automating Our Most Human Industry: Venture Capital",
       "date": "2025-04-01",
@@ -68,17 +86,17 @@
         "Automation",
         "Crypto"
       ],
-      "linkedin": "https://www.linkedin.com/posts/activity-7312877482821525504-T5Lf",
+      "linkedin": "https://www.linkedin.com/pulse/automating-our-most-human-industry-venture-capital-yaniv-proselkov-2g5bc/",
       "page": "essays/automating-venture-capital.html"
     },
     {
       "id": "mushrooms-not-ecosystems",
       "title": "Mushrooms, not Ecosystems",
       "date": "2025-03-16",
-      "summary": "Cambridge is famously good at growing startups \u2014 but does it keep them? A reflection on whether Cambridge is a farm for London, or the mushroom of a global wood-wide-web of innovation.",
+      "summary": "Is Cambridge an ecosystem, a farm, or the mushroom of a wood-wide-web of innovation? A reflection on what Cambridge actually is, and how to plant roots accordingly.",
       "cover": {
         "src": "pictures/mushroom.jpg",
-        "alt": "A surreal Cambridge college framed by tree roots and glowing mushrooms, evoking a wood-wide-web."
+        "alt": "A surreal Cambridge college framed by tree roots and glowing mushrooms."
       },
       "tags": [
         "Cambridge",
@@ -92,7 +110,7 @@
       "id": "tower-of-babel-vc-jargon",
       "title": "The Regrettable Outcomes of the Tower of Babel and Resultant Venture Capital Jargon",
       "date": "2025-03-04",
-      "summary": "Decoding three terms in Venture Capital \u2014 Investor Conviction, Post-Investment, and Secondary Sales \u2014 so you can understand the secret language of venture capitalists.",
+      "summary": "Decoding three terms in Venture Capital \u2014 Investor Conviction, Post-Investment, and Secondary Sales.",
       "cover": {
         "src": "pictures/babel.jpg",
         "alt": "Painting of the Tower of Babel rising over a river landscape."
@@ -106,12 +124,12 @@
     },
     {
       "id": "due-diligence-in-vc",
-      "title": "Understanding Due Diligence in Venture Capital",
-      "date": "2025-02-26",
-      "summary": "First screening, business diligence, legal diligence \u2014 and the honest question every investor faces: how do you do reliable pre-seed diligence when most of the documentation simply doesn't exist yet?",
+      "title": "Due Diligence in Venture Capital",
+      "date": "2025-03-01",
+      "summary": "Separating wheat from chaff \u2014 what due diligence actually involves, why it matters, and how VCs evaluate early-stage opportunities.",
       "cover": {
-        "src": "pictures/rice.jpg",
-        "alt": "Workers winnowing rice in a field, separating grain from chaff."
+        "src": "pictures/glowing.png",
+        "alt": "A glowing digital network node graph."
       },
       "tags": [
         "Venture Capital",
@@ -121,21 +139,39 @@
       "page": "essays/due-diligence-in-vc.html"
     },
     {
-      "id": "cambridge-innovation-ecosystem-2025",
-      "title": "The Cambridge Innovation Ecosystem of 2025: A VC Deep-Dive",
-      "date": "2025-02-17",
-      "summary": "$191B ecosystem, 45 acquisitions, 29 IPOs, lean valuations, and a unique licensing-led VC model. Why Cambridge produces extraordinary seed-stage outcomes \u2014 and why so many companies still get acquired rather than scaled.",
+      "id": "sailing-into-the-unknown-phd-viva",
+      "title": "Sailing into the Unknown: Passing the PhD Viva",
+      "date": "2024-06-28",
+      "summary": "Reflections on passing the final oral examination (viva) for the PhD at the University of Cambridge \u2014 scaling the mountain, predicting the path into the unknown, and bringing back slivers of new knowledge.",
       "cover": {
-        "src": "pictures/cambridge.jpg",
-        "alt": "Aerial view of King's College Chapel and surrounding Cambridge colleges in golden light."
+        "src": "pictures/sailing_into_unknown_viva.png",
+        "alt": "Sailing into the unknown illustration"
       },
       "tags": [
+        "PhD",
         "Cambridge",
-        "Venture Capital",
-        "Innovation"
+        "Viva",
+        "Academia"
       ],
-      "linkedin": "https://www.linkedin.com/posts/activity-7297087610999525376-8ewR",
-      "page": "essays/cambridge-innovation-ecosystem-2025.html"
+      "linkedin": "https://www.linkedin.com/posts/activity-7212437556683010048-CgYu",
+      "page": "essays/sailing-into-the-unknown-phd-viva.html"
+    },
+    {
+      "id": "agent-based-modelling-supply-chain-financing",
+      "title": "Agent-Based Modelling of Firm-to-Firm Supply Chain Financing",
+      "date": "2023-04-27",
+      "summary": "Insights from the SCAIL research visit to the Complexity Science Hub Vienna \u2014 applying agent-based modeling to firm-to-firm supply chain financing and dynamic network resilience.",
+      "cover": {
+        "src": "pictures/talk_csh_vienna.png",
+        "alt": "SCAIL visit to Complexity Science Hub Vienna"
+      },
+      "tags": [
+        "Supply Chain",
+        "Complexity Science",
+        "Agent-Based Modelling"
+      ],
+      "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7057262126783979520",
+      "page": "essays/agent-based-modelling-supply-chain-financing.html"
     }
   ]
 }
