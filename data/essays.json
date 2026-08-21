@@ -1,6 +1,24 @@
 {
   "essays": [
     {
+      "id": "maritime-vs-continental-governance-ai",
+      "title": "Maritime vs. Continental Governance Paradigms in the Age of AI",
+      "date": "2026-08-18",
+      "summary": "Why the historical political cycles of maritime (distributed) and continental (centralised) powers provide a vital lens for understanding AI governance, knowledge consolidation, and human organizational limits.",
+      "cover": {
+        "src": "pictures/maritime_continental_ai.png",
+        "alt": "Maritime vs Continental Governance illustration"
+      },
+      "tags": [
+        "Governance",
+        "AI",
+        "History",
+        "Strategy"
+      ],
+      "linkedin": "https://www.linkedin.com/posts/activity-7425241607697924096-QTzE",
+      "page": "essays/maritime-vs-continental-governance-ai.html"
+    },
+    {
       "id": "next-great-teachers-ai-displaces",
       "title": "The Next Great Teachers May Be the Workers AI Displaces",
       "date": "2026-07-22",
