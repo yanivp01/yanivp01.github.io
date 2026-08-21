@@ -31,6 +31,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.yapros.co.uk/videos.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.yapros.co.uk/essays/next-great-teachers-ai-displaces.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.yapros.co.uk/essays/multilayer-thinking-bubble-tricks.html</loc>
     <lastmod>2025-10-06</lastmod>
     <changefreq>yearly</changefreq>

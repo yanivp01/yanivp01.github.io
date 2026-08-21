@@ -1,6 +1,17 @@
 {
   "essays": [
     {
+      "id": "next-great-teachers-ai-displaces",
+      "title": "The Next Great Teachers May Be the Workers AI Displaces",
+      "date": "2026-07-22",
+      "summary": "Why the rising gap in human-led education and the displacement of skilled workers by AI present a symbiotic opportunity: turning high-level technical workers into the next generation of process-oriented educators.",
+      "cover": { "src": "pictures/teachers-ai-displaces.jpg", "alt": "Cover image showing educational and work transformation" },
+      "tags": ["Education", "AI", "Future of Work", "Strategy"],
+      "linkedin": "https://www.linkedin.com/pulse/next-great-teachers-may-workers-ai-displaces-yaniv-proselkov-phd-x1acf/",
+      "linkedinPulse": "https://www.linkedin.com/pulse/next-great-teachers-may-workers-ai-displaces-yaniv-proselkov-phd-x1acf/",
+      "page": "essays/next-great-teachers-ai-displaces.html"
+    },
+    {
       "id": "multilayer-thinking-bubble-tricks",
       "title": "Multilayer Thinking: Bubble Tricks and the Age of the Ecosystem",
       "date": "2025-10-06",

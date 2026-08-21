@@ -1,0 +1,510 @@
+[401.9s] uh YouTube. So if you if you want to
+[404.8s] watch really uh interesting videos about
+[408.2s] really boring topics, you can check out
+[409.8s] some of my videos. I I try to make
+[411.8s] videos about very nerdy topics and try
+[414.8s] to make them fun. So which is why I have
+[416.7s] a cool background as as R has always
+[419.3s] indicated. So thank you so much for
+[421.2s] having me and I'm looking forward to
+[422.8s] this panel. We love nerds, Ry. We love
+[425.9s] nerds. What can we say? [laughter]
+[428.6s] Andy, would you like to go next?
+[430.6s] >> Uh, sure. Yeah. Um, my name is Andy
+[433.4s] Kruis. I'm the head of marketing at
+[435.4s] Nacho Nacho. We're a SAS and AI
+[437.4s] marketplace. Uh, we work with uh all the
+[439.7s] top software and AI products in the
+[441.6s] market and offer, you know, huge
+[443.0s] discounts. Uh, we have direct
+[444.9s] relationships with all the brands and,
+[446.4s] uh, directly negotiate the best pricing
+[448.2s] you could possibly get. Um, I've been a
+[450.6s] founder as well several times. uh some
+[453.0s] wins, some losses. Um you learn a lot
+[455.8s] from uh from all of them no matter which
+[457.7s] side of the coin you end up on. Um been
+[459.8s] in startups for about I think about 18
+[462.0s] years now. Um my first company was doing
+[464.4s] events in college. Then I started a
+[466.1s] social media agency, expanded to a
+[468.3s] variety of other marketing services from
+[469.9s] there. Uh then I got into technology
+[472.0s] because I love the ability for
+[473.7s] technology to really scale things. Um,
+[475.7s] so I've been doing technology for the
+[477.0s] most part of 15 to 17 years and, uh,
+[479.5s] which got me to, uh, where I'm at today,
+[481.5s] working with a lot of other founders
+[482.7s] like me, helping promote their products
+[484.3s] to our, uh, 300,000 customers. Um, I
+[487.5s] also operate as an angel investor, so I,
+[489.8s] you know, get to meet a lot of great
+[491.0s] founders early stage and love to write
+[493.3s] their first check typically, uh, smaller
+[495.3s] check sizes, but, you know, I typically
+[497.0s] bet on the founder and, um, you know,
+[499.1s] have a pretty good understanding of the
+[500.4s] products typically to, um, as an
+[502.2s] operator myself to, uh, take a bet on
+[503.9s] them. So that's my background.
+[507.1s] >> Awesome. Thank you so much, Andy.
+[509.1s] Lizard, I see your cameras working back
+[512.5s] working again. So you're up next.
+[515.9s] >> Thank you. Uh thank you for having me
+[517.7s] today. So my name is Lad and I'm based
+[519.7s] in the Cayman Islands. Um so I've been
+[522.0s] in marketing for the past 25 years. I
+[525.5s] don't know how that happened because I'm
+[526.9s] only 25. Um but yes so um
+[533.0s] I'm very much into brand strategy and
+[537.0s] communications mostly for governments
+[539.6s] and large organizations across the
+[542.2s] Caribbean.
+[546.4s] Um my experience started back in Latin
+[550.2s] America. Um and then man for the past 11
+[553.0s] years. Um and recently since 2022 I
+[555.5s] turned into the technology um to in the
+[558.7s] first place try to optimize my own
+[561.0s] operation as a as an owner and as an
+[563.6s] agency. Uh which eventually led me to
+[567.4s] create a SAS AI marketing. Um and then
+[570.9s] literally trying to navigate both of the
+[574.5s] worlds
+[576.3s] traditional AI and how communication
+[579.0s] structure should work for government
+[580.8s] entities um and at the same time how to
+[583.6s] leverage the technology for more out
+[585.9s] there more risky um use cases. So it's
+[588.6s] been a very interesting journey and
+[590.2s] trying to mix and match both without
+[592.2s] dismissing both. Um so I'm very excited
+[595.8s] to share my findings so far um with you
+[598.7s] guys.
+[600.9s] Wonderful. Thank you so very much,
+[602.6s] Lette. And for those of you who may be
+[605.5s] new to our community, my name is R and
+[608.2s] answering. I lead Founder Institute in
+[610.3s] the Caribbean. And this evening, I'm
+[612.1s] joined by these two lovely ladies, Adana
+[615.8s] John, who heads our communications, and
+[618.8s] Dr. Nik Schmidt, who will be serving as
+[621.1s] our program manager going forward. So,
+[624.2s] let's dive into it. Uh, Yaniv, we'll
+[626.4s] kick things off with you, you know. Um
+[628.8s] so you you've already shared that your
+[630.6s] work sits at the intersection of AI
+[633.5s] network systems and real world
+[635.9s] infrastructure like supply chains and
+[637.8s] and telecoms. Um you've also spent time
+[641.8s] inside deep tech incubators where where
+[644.4s] those ideas have to translate into
+[648.1s] working systems. So when founders
+[650.8s] describe their startups as AI native,
+[654.0s] what should that actually mean at a
+[656.4s] systems level um beyond just layering AI
+[661.0s] onto an existing product?
+[665.3s] So uh it depends on what you mean by
+[668.4s] system and the that ex answering that
+[672.7s] exact question is one of the key
+[675.4s] problems of it all. Uh
+[678.9s] you can have a given system say a supply
+[683.0s] chain uh where a lot of my research has
+[685.7s] come from say uh port dynamics internal
+[689.4s] port dynamics and you can have the port
+[692.6s] movements and you install some sort of
+[695.4s] cameras or whatever into the system to
+[698.4s] develop some sort of readout of what's
+[700.6s] happening and then an AI inference which
+[702.5s] suggests you strategically how you
+[704.0s] should adjust things. That's not AI
+[705.4s] native. That's not AI native. AI native
+[708.8s] means recognizing the structure of the
+[711.5s] current economy we have. That is to say,
+[713.9s] we have a system, an AI system. AI is an
+[718.2s] eco system unto itself. Recognizing that
+[721.7s] you if you feed into it, you get back
+[725.1s] the same rough thing. designing your
+[728.2s] innovations with AI developments in mind
+[732.6s] to say I have this given product and its
+[737.4s] purpose beyond just uh developing some
+[740.4s] kind of return or servicing some sort of
+[742.3s] need. It establishes a data channel. It
+[746.0s] allows me to learn about something else.
+[748.2s] It plugs into this given system and it
+[751.1s] does so smoothly in a way which then
+[754.3s] allows me to bootstrap its growth using
+[757.8s] AI mechanisms.
+[760.1s] You have to study how all these things
+[762.5s] connect into one another. the
+[764.8s] stakeholder networks, the physical
+[767.0s] networks, the digital networks. Uh
+[769.8s] whether you're determining whether the
+[772.4s] kind of venture you're developing is one
+[776.1s] where data can be extracted out of it
+[779.1s] and rejecting those that can't because
+[781.7s] that's not a path to modern day
+[783.5s] bootstrapping. That's AI native. That's
+[786.8s] looking at the AI system as a goal unto
+[789.4s] itself because you have to start seeing
+[793.4s] the object that is being developed at
+[795.7s] the moment isn't it's not the only
+[798.4s] deliverable anymore. Like I people have
+[800.7s] been saying data is the new oil. Data is
+[802.3s] the new oil. Data is the new oil. We now
+[804.9s] know what to do with the oil. If you're
+[807.0s] not doing something with this oil,
+[809.3s] you're just sitting there in a bucket of
+[810.7s] grease. Which I mean to some people
+[812.3s] maybe that's good, but personally not my
+[814.1s] my cup of tea.
+[817.9s] uh how how how do I uh elaborate on
+[821.5s] this? I I'll try to give an example.
+[824.3s] Okay. Um let's a AIOS. I'm working with
+[828.6s] AIOS now. Uh that's where a lot of my
+[831.0s] development work is going. Uh and our
+[834.2s] goal is not just to teach kids.
+[839.4s] uh it's not just to teach people and to
+[841.9s] get them inspired
+[844.2s] and all those things. Our goal is to tap
+[847.4s] into that source of information,
+[850.8s] plugging into how teachers connect with
+[853.9s] student experiences, how students
+[855.4s] navigate through this process and trying
+[857.6s] to understand how this can be smoothly
+[859.3s] achieved without
+[862.0s] uh causing the normal business v the act
+[864.5s] of education uh without tapping from
+[868.0s] that to make that less efficient. It has
+[870.2s] to be a synchronicity. The yin and yang
+[872.5s] has to be intersected with itself. uh
+[875.0s] and then going from a systems
+[876.6s] perspective, there's fundamental
+[877.8s] mathematics that needs to be considered
+[879.8s] in this process as well as its impact
+[882.9s] onto everybody else. You can't you can't
+[885.5s] really get away with skipping those
+[889.4s] different concept. You can't get away
+[890.5s] with skipping the statistics, the data
+[891.8s] science, the data the data engineering,
+[894.2s] the uh human factor, the stakeholders,
+[896.2s] the business itself, how they all
+[897.8s] interlace and because you have the tools
+[900.8s] now to assess them. You have the AIs,
+[903.4s] you have a machine to tell you this
+[905.0s] connects with this and then you can
+[906.2s] start studying your yourself
+[907.2s] independently. It's not just you
+[909.8s] anymore. So you can achieve those things
+[912.5s] and you have to. That's what makes
+[913.9s] something AI native.
+[915.2s] >> Yeah, I think that's really interesting,
+[916.4s] Yane. Um earlier on I was looking at um
+[919.8s] some content that uh Diana who uh the
+[922.7s] general partner at Y Combinator put out
+[925.1s] and and she was describing
+[927.5s] something very similar to what you just
+[929.0s] shared in terms of an AI OS so that the
+[932.4s] the the tools are or I should say that
+[935.9s] from a startup perspective we're moving
+[937.9s] away or transitioning from just AI tools
+[941.7s] helping with productivity to AI being
+[945.1s] part of your operating system and not
+[947.1s] just for the engineering department but
+[949.0s] across all segments of your company. Um
+[952.6s] so yeah so so that's a really
+[954.2s] interesting perspective. Thanks so much
+[955.7s] Yaniv. Um we'll keep the conversation
+[958.4s] flowing. So you know um jumping to you
+[961.2s] CIS um
+[964.6s] I've been following you on your socials.
+[967.7s] you know, you're you're you're very
+[968.9s] active and I love your content and um so
+[971.5s] I've seen that you've spent probably
+[973.5s] over a decade advising across not just
+[977.1s] corporate but also commercial and
+[980.4s] crossber legal matters as well and
+[983.0s] you're working across several
+[985.2s] jurisdictions in the Caribbean. So for
+[988.8s] founders who are beginning to build AI
+[991.5s] native companies now, what are you
+[994.3s] seeing as the biggest legal blind spots
+[997.5s] particularly around their data usage,
+[1000.6s] ownership and liability? Share some
+[1003.3s] nuggets with us. So I think a big one is
+[1007.1s] people getting maybe too excited and
+[1009.7s] then caught up in the potention and
+[1013.4s] potential and possibility and not
+[1015.8s] actually mapping things out from end to
+[1018.1s] end as to how everything is going to
+[1020.9s] work and fit together. Like for
+[1022.5s] instance, I've had founders who would
+[1024.9s] come and say, I'm going to build an all
+[1027.0s] AI company. Everything's going to be run
+[1028.7s] by AI. And I just laugh in the back of
+[1031.0s] my head because I'm like, are you
+[1032.6s] reading the news and seeing what AI is
+[1034.4s] doing to companies that go that way? So
+[1037.1s] there are risks and yes, there have been
+[1040.2s] systems that have been broken for a very
+[1042.1s] long time. I I'm very tech forward, I
+[1045.7s] would think. Like I I'm not a
+[1047.4s] technologist, but at the same time, I'm
+[1050.1s] very open to technology and use cases
+[1053.5s] that help in the way that I work, in the
+[1056.5s] way that I run my life. But at the same
+[1059.3s] time, we have to understand that there
+[1061.3s] are a lot of uh blind spots and problems
+[1064.6s] that we know of and then also that we
+[1066.9s] don't know of and kind of figure out
+[1068.9s] we're not going to know all of the
+[1070.2s] answers. We're not going to know all of
+[1071.5s] the problems. So, we can't know all of
+[1073.2s] the solutions, but we are being very
+[1076.3s] naive. And when I say we, I would
+[1078.2s] include myself in that too in that we
+[1081.2s] think that there are these patches and
+[1084.8s] save alls that will figure themselves
+[1087.1s] out and we don't need to we don't need
+[1089.0s] to to think about it. Because I even had
+[1091.1s] somebody say that to me as well. They
+[1093.0s] said, you know, well, I built an AI
+[1096.0s] manager, so even if there are problems
+[1098.4s] with the way things are implemented,
+[2700.3s] there's lots of different places lots of
+[2702.9s] different economies lots of different
+[2704.2s] conditions the pure geoysical structure
+[2707.6s] of the car Caribbean means like you you
+[2710.3s] you've got you've got the oceans, you've
+[2712.0s] got the beaches, you've got the inlands,
+[2713.5s] you've got the mountains, you've got
+[2714.7s] everything and that physically changes
+[2716.7s] the problem you have to deal with. The
+[2718.8s] constraints of it are enormous. But the
+[2722.3s] insight that can be derived from this is
+[2726.3s] immense. You're playing you're playing
+[2727.8s] on hard difficulty. But because because
+[2731.4s] because because because the real
+[2733.0s] challenge now isn't the technical output
+[2735.0s] but the personal and knowledge or
+[2737.8s] communicable output. Playing all that
+[2739.8s] hard difficulty means you have the
+[2741.6s] advantage of the most interesting case
+[2745.4s] study possible. You have so many ways to
+[2749.5s] be unique. Your challenge is to know how
+[2752.7s] to plug in to this ecosystem and then
+[2756.1s] using the tools you have available to do
+[2757.6s] this and then you have you have a
+[2760.0s] framework for porting this around the
+[2762.2s] world building to my understanding in
+[2765.1s] the Caribbean uh is it's it's anybody's
+[2769.4s] game and because of that your capacity
+[2773.5s] for knowledge capital which is the real
+[2776.8s] real real thing strategic knowledge
+[2779.4s] capital to be to to be specific, not
+[2781.6s] just not just like uh how to optimize
+[2785.6s] the uh processing of sorghum or
+[2787.8s] whatever. Uh
+[2790.4s] strategically understanding how to
+[2792.4s] manage hyper complex interactivity which
+[2796.4s] has not yet been formalized by
+[2798.5s] collective operational systems. you have
+[2801.4s] the capacity first first of all for
+[2803.0s] yourself but going back to the Caribbean
+[2805.5s] and using the example of Cambridge the
+[2808.2s] advantages that you can achieve by
+[2810.9s] upgrading such a system without
+[2812.6s] fundamentally transforming it allows for
+[2815.7s] something far more advanced than anybody
+[2817.6s] else Cambridge is amazing because it's
+[2820.2s] disagregated because there's a thousand1
+[2823.2s] different operations being done to
+[2825.5s] conduct a new kind of science to create
+[2827.7s] new kind of interactions interpersonal
+[2829.8s] interactions new different laboratories,
+[2831.8s] new approaches. It's it's it's a jungle.
+[2836.4s] The more consolidated economies, broader
+[2840.0s] Brit Britain, broader, it's slow. It's
+[2842.6s] so slow in Britain. It's so slow in
+[2845.8s] Europe. America is excellent because
+[2847.9s] it's fast, because it's still a with all
+[2850.1s] due respect to developing economy.
+[2851.9s] [laughter]
+[2852.7s] And the more you're in that nature of an
+[2855.0s] economy, that ability to develop, the
+[2857.3s] more you can get out of it. And because
+[2860.6s] the interpersonal networks that you get
+[2863.8s] are the advantage, you have the ability
+[2866.7s] to create superior interpersonal
+[2868.8s] networks that you inhabit.
+[2872.2s] And from there then you can compete. You
+[2874.4s] can destroy anybody easily, easily,
+[2876.9s] easily because it's all knowledge, all
+[2878.6s] knowledge integration.
+[2880.2s] >> Jungle meets wide open blue ocean,
+[2883.5s] right?
+[2885.5s] and and I I you know what what what you
+[2888.0s] mentioned earlier in in in that segment
+[2890.6s] around you know um Cambridge with a lot
+[2893.4s] of scientists and creating solutions in
+[2896.9s] search of a problem when when we know
+[2899.4s] you know in the startup world it's the
+[2901.7s] reverse you know so um yeah just wanted
+[2905.2s] to double click on that but thanks so
+[2907.0s] much Yaniv um
+[2908.6s] >> if I may if I may close for just one
+[2910.2s] second please
+[2910.8s] >> yeah of course
+[2912.0s] >> so the real competitive point is the
+[2915.1s] human one and speaking from an
+[2918.1s] evolutionary perspective,
+[2920.3s] humanity evolved on the beaches.
+[2924.3s] A human being is the most complex, the
+[2926.9s] most diverse entity required to analyze
+[2930.1s] the most complex ecological space and
+[2933.0s] those are the beaches.
+[2934.7s] >> Jennif and put it into my presentations
+[2937.4s] moving forward.
+[2939.7s] [laughter]
+[2941.5s] >> Love that. Love that.
+[2944.2s] Thanks again, Yaniv. Um, so Celiss, you
+[2947.4s] know, you you continue to work closely
+[2949.8s] with businesses that are scaling and
+[2952.6s] expanding beyond their home markets. Um,
+[2954.9s] we live in the Caribbean and and we we
+[2957.0s] already know that you can't just be
+[2959.0s] thinking about your island that you live
+[2960.6s] on. You you have to be thinking region
+[2963.8s] at at a minimum. Um, so you know for a
+[2967.4s] founder who is in the Caribbean and
+[2969.5s] wants to build
+[2971.8s] uh for a global market from day one, how
+[2974.5s] should they be thinking about
+[2975.8s] structuring their company um legally to
+[2978.6s] avoid friction later on?
+[2982.2s] >> Okay, so I mentioned one of my legal
+[2984.9s] pillars was oil and gas, right? And I
+[2987.4s] think the best example of being able to
+[2990.2s] mitigate and spread risk I learned from
+[2992.9s] those environments. So the oil
+[2995.3s] companies, you know, we have a lot of
+[2996.6s] them in Trinidad. What you you you might
+[2999.0s] hear BP, but what you see or hear or
+[6401.1s] think these were some very practical
+[6403.2s] tips and coming back to what we said at
+[6405.9s] the giving a gift first before you ask
+[6408.5s] for anything. Um, I think that was it
+[6411.6s] for the questions. So, we'll wrap up the
+[6414.6s] Q&A and I'll hand it over to you, Ro.
+[6417.1s] >> Thank you so very much, Nikki. Um, all
+[6419.4s] right. So, as we approach the top of the
+[6421.2s] hour, I would like to invite each
+[6423.8s] panelist uh in 30 to 60 seconds closing
+[6427.5s] thoughts. Uh, Yaniv, start with you.
+[6432.3s] >> All right. um to when you're thinking
+[6435.8s] about becoming AI native always remember
+[6439.1s] that there is a shifting economy
+[6441.4s] happening around us and what what we
+[6445.3s] have is a new kind of ecosystem
+[6448.6s] figure out exact actually following on
+[6451.0s] from what just said figure out first of
+[6453.2s] all what your market needs but also what
+[6455.4s] the AI systems you're plugging into need
+[6458.2s] and what you can use from those use
+[6460.6s] every single opportunity as a learning
+[6462.4s] exper experience and as a mechanism to
+[6464.6s] gather more data uh so that you have
+[6468.1s] strategic capabilities as well as
+[6470.3s] knowledge capabilities and if you have
+[6472.9s] all those pieces in place then you can
+[6475.1s] very easily start being revenue
+[6476.9s] generating and then from then on you can
+[6480.2s] maybe try to go for a unicorn but it's a
+[6482.3s] more incremental process now
+[6484.8s] >> thank you Yaniv Celis closing thoughts
+[6488.8s] >> so I just wanted to jump on and add in
+[6491.0s] give yes but especially Especially when
+[6492.6s] you're dealing with people with money,
+[6494.3s] even with an NDA, please don't give too
+[6496.5s] much because you will see your idea and
+[6499.4s] your business being run without you
+[6502.3s] sometimes on a national scale. Speaking
+[6504.9s] from experience there and experience
+[6507.0s] from my clients as well. So there's
+[6509.1s] that. But also what I would say is in
+[6512.4s] business building. So one of the cool
+[6515.0s] things that I liked living in London was
+[6517.5s] that there were these different channels
+[6519.3s] of delivery. Like, okay, think of a
+[6521.0s] supermarket for instance. They had the
+[6524.2s] fast lane where you can just go get your
+[6526.6s] groceries cashed very quickly. They had
+[6528.8s] the fast checkouts which were
+[6530.3s] self-service. And later on that became
+[6532.3s] entire supermarkets where there were no
+[6534.5s] cashes at all. You didn't have to
+[6536.2s] interact with anybody human. You did
+[6538.7s] your shopping, checked out yourself and
+[6541.7s] went your way. But then they started
+[6543.7s] introducing these slow lanes for older
+[6545.8s] persons. Persons who wanted the human
+[6547.7s] touch, who wanted to have a
+[6548.9s] conversation, who wanted somebody to see
+[6550.8s] them and ask about their grandkids, you
+[6552.8s] know, that kind of thing. So when you're
+[6555.3s] building, you have to think about if
+[6558.1s] your market is ready to move with you.
+[6560.5s] Where is your market at? And that
+[6562.8s] determines how you provide your products
+[6565.1s] and services, what channels, what how
+[6567.4s] you deliver your expectations. All of
+[6570.1s] that has to be a structured tailored
+[6572.6s] conversation that you have with yourself
+[6574.0s] and your advisors. And then the final
+[6576.5s] thing that I would say is it's very
+[6579.6s] difficult to see your blind spots. I
+[6582.5s] know that from personal experience and
+[6584.9s] just a very quick story. So this is
+[6586.6s] completely unbelievable, but I went to a
+[6589.4s] food uh park recently and my husband and
+[6593.4s] daughter walked away from where I was.
+[6595.8s] And so I'm looking at for them, but my
+[6598.2s] husband's very tall. So, I'm looking
+[6600.6s] this way up because I'm expecting to see
+[6603.8s] him. He is a a bit away from my daughter
+[6607.5s] and he says from his perspective, he's
+[6610.3s] seeing me standing next to her. I did
+[6612.2s] not see her at all. Like my own child is
+[6615.8s] next to me and I didn't see her. So, I
+[6617.7s] just say that to illustrate. When you're
+[6619.6s] deep down in something and you're
+[6621.0s] invested and you're expecting certain
+[6623.0s] results, certain answers, you're not
+[6625.0s] going to see the risks and everything
+[6626.6s] else that is associated with it. So,
+[6629.0s] please get uh professional advice or
+[6631.5s] just step away and look at things from a
+[6633.5s] different lens and aspect and I'm sure
+[6636.3s] we'll all be fine.
+[6637.8s] >> Love that, Cis. Even the best athletes
+[6639.9s] have coaches, right? So, yeah, on point.
+[6642.6s] Uh Shring closing thoughts.
+[6646.0s] >> Yes, I think closing thoughts for me
+[6648.2s] would be the same that you know uh the
+[6651.5s] essence of business is the same. Cash
+[6653.4s] going in, cash going out. You need to
+[6654.9s] know at all times. AI has not changed
+[6658.4s] that basic structure. It has just moved
+[6660.8s] the cost. So be very careful. You know,
+[6663.4s] you need to know what your unit
+[6665.4s] economics are. You need to know where
+[6667.0s] exactly are you spending. And to just
+[6669.9s] add on to the whole uh AI native uh
+[6673.5s] building, right? So the so so I uh
+[6678.1s] coincidentally I was at an Founders
+[6680.9s] Institute another founders institute
+[6683.1s] event in Berlin where Adeo Rei was here
+[6687.4s] and he had some great insights to say uh
+[6690.5s] share which was that do not add AI
+[6695.0s] because we now have to use AI and
+[6698.2s] everything. Do not think about how how
