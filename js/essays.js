@@ -63,15 +63,6 @@
         text: 'LinkedIn ↗'
       }));
     }
-    if (item.linkedinPulse) {
-      actions.appendChild(el('a', {
-        href: item.linkedinPulse,
-        target: '_blank',
-        rel: 'noopener noreferrer',
-        class: 'ext-link',
-        text: 'LinkedIn Pulse ↗'
-      }));
-    }
     body.appendChild(actions);
 
     card.appendChild(body);

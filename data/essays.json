@@ -5,19 +5,33 @@
       "title": "The Next Great Teachers May Be the Workers AI Displaces",
       "date": "2026-07-22",
       "summary": "Why the rising gap in human-led education and the displacement of skilled workers by AI present a symbiotic opportunity: turning high-level technical workers into the next generation of process-oriented educators.",
-      "cover": { "src": "pictures/teachers-ai-displaces.jpg", "alt": "Cover image showing educational and work transformation" },
-      "tags": ["Education", "AI", "Future of Work", "Strategy"],
+      "cover": {
+        "src": "pictures/teachers-ai-displaces.jpg",
+        "alt": "Cover image showing educational and work transformation"
+      },
+      "tags": [
+        "Education",
+        "AI",
+        "Future of Work",
+        "Strategy"
+      ],
       "linkedin": "https://www.linkedin.com/pulse/next-great-teachers-may-workers-ai-displaces-yaniv-proselkov-phd-x1acf/",
-      "linkedinPulse": "https://www.linkedin.com/pulse/next-great-teachers-may-workers-ai-displaces-yaniv-proselkov-phd-x1acf/",
       "page": "essays/next-great-teachers-ai-displaces.html"
     },
     {
       "id": "multilayer-thinking-bubble-tricks",
       "title": "Multilayer Thinking: Bubble Tricks and the Age of the Ecosystem",
       "date": "2025-10-06",
-      "summary": "The economy is the bubble economists can't fully understand because they live inside it. But within it we can build smaller, bounded games — crypto, fintech, tokenomics — that we can shape at will. Why ecosystems, not businesses, are the right unit of work today.",
-      "cover": { "src": "pictures/bubble.jpg", "alt": "A young man blowing a large bubble filled with smoke and smaller bubbles inside it." },
-      "tags": ["Ecosystems", "Economics", "Strategy"],
+      "summary": "The economy is the bubble economists can't fully understand because they live inside it. But within it we can build smaller, bounded games \u2014 crypto, fintech, tokenomics \u2014 that we can shape at will. Why ecosystems, not businesses, are the right unit of work today.",
+      "cover": {
+        "src": "pictures/bubble.jpg",
+        "alt": "A young man blowing a large bubble filled with smoke and smaller bubbles inside it."
+      },
+      "tags": [
+        "Ecosystems",
+        "Economics",
+        "Strategy"
+      ],
       "linkedin": "https://www.linkedin.com/posts/activity-7419499786405339136-0E9T",
       "page": "essays/multilayer-thinking-bubble-tricks.html"
     },
@@ -26,19 +40,33 @@
       "title": "Automating Our Most Human Industry: Venture Capital",
       "date": "2025-04-01",
       "summary": "Why VC resists automation, what crypto, DAOs, and platforms get right and wrong, and why the real opportunity is not automating VC itself but designing investable assets and multi-asset models around it.",
-      "cover": { "src": "pictures/thinking.png", "alt": "A silhouetted figure on a precipice with a glowing digital brain over a circuit-board city." },
-      "tags": ["Venture Capital", "AI", "Automation", "Crypto"],
+      "cover": {
+        "src": "pictures/thinking.png",
+        "alt": "A silhouetted figure on a precipice with a glowing digital brain over a circuit-board city."
+      },
+      "tags": [
+        "Venture Capital",
+        "AI",
+        "Automation",
+        "Crypto"
+      ],
       "linkedin": "https://www.linkedin.com/posts/activity-7312877482821525504-T5Lf",
-      "linkedinPulse": "https://www.linkedin.com/pulse/automating-our-most-human-industry-venture-capital-yaniv-proselkov-2g5bc/",
       "page": "essays/automating-venture-capital.html"
     },
     {
       "id": "mushrooms-not-ecosystems",
       "title": "Mushrooms, not Ecosystems",
       "date": "2025-03-16",
-      "summary": "Cambridge is famously good at growing startups — but does it keep them? A reflection on whether Cambridge is a farm for London, or the mushroom of a global wood-wide-web of innovation.",
-      "cover": { "src": "pictures/mushroom.jpg", "alt": "A surreal Cambridge college framed by tree roots and glowing mushrooms, evoking a wood-wide-web." },
-      "tags": ["Cambridge", "Ecosystems", "Innovation"],
+      "summary": "Cambridge is famously good at growing startups \u2014 but does it keep them? A reflection on whether Cambridge is a farm for London, or the mushroom of a global wood-wide-web of innovation.",
+      "cover": {
+        "src": "pictures/mushroom.jpg",
+        "alt": "A surreal Cambridge college framed by tree roots and glowing mushrooms, evoking a wood-wide-web."
+      },
+      "tags": [
+        "Cambridge",
+        "Ecosystems",
+        "Innovation"
+      ],
       "linkedin": "https://www.linkedin.com/posts/activity-7307170318542925824-fxKw",
       "page": "essays/mushrooms-not-ecosystems.html"
     },
@@ -46,9 +74,15 @@
       "id": "tower-of-babel-vc-jargon",
       "title": "The Regrettable Outcomes of the Tower of Babel and Resultant Venture Capital Jargon",
       "date": "2025-03-04",
-      "summary": "Decoding three terms in Venture Capital — Investor Conviction, Post-Investment, and Secondary Sales — so you can understand the secret language of venture capitalists.",
-      "cover": { "src": "pictures/babel.jpg", "alt": "Painting of the Tower of Babel rising over a river landscape." },
-      "tags": ["Venture Capital", "Glossary"],
+      "summary": "Decoding three terms in Venture Capital \u2014 Investor Conviction, Post-Investment, and Secondary Sales \u2014 so you can understand the secret language of venture capitalists.",
+      "cover": {
+        "src": "pictures/babel.jpg",
+        "alt": "Painting of the Tower of Babel rising over a river landscape."
+      },
+      "tags": [
+        "Venture Capital",
+        "Glossary"
+      ],
       "linkedin": "https://www.linkedin.com/posts/activity-7302503345376686080-1X5Q",
       "page": "essays/tower-of-babel-vc-jargon.html"
     },
@@ -56,9 +90,15 @@
       "id": "due-diligence-in-vc",
       "title": "Understanding Due Diligence in Venture Capital",
       "date": "2025-02-26",
-      "summary": "First screening, business diligence, legal diligence — and the honest question every investor faces: how do you do reliable pre-seed diligence when most of the documentation simply doesn't exist yet?",
-      "cover": { "src": "pictures/rice.jpg", "alt": "Workers winnowing rice in a field, separating grain from chaff." },
-      "tags": ["Venture Capital", "Due Diligence"],
+      "summary": "First screening, business diligence, legal diligence \u2014 and the honest question every investor faces: how do you do reliable pre-seed diligence when most of the documentation simply doesn't exist yet?",
+      "cover": {
+        "src": "pictures/rice.jpg",
+        "alt": "Workers winnowing rice in a field, separating grain from chaff."
+      },
+      "tags": [
+        "Venture Capital",
+        "Due Diligence"
+      ],
       "linkedin": "https://www.linkedin.com/posts/activity-7300299046311583745-4O3y",
       "page": "essays/due-diligence-in-vc.html"
     },
@@ -66,9 +106,16 @@
       "id": "cambridge-innovation-ecosystem-2025",
       "title": "The Cambridge Innovation Ecosystem of 2025: A VC Deep-Dive",
       "date": "2025-02-17",
-      "summary": "$191B ecosystem, 45 acquisitions, 29 IPOs, lean valuations, and a unique licensing-led VC model. Why Cambridge produces extraordinary seed-stage outcomes — and why so many companies still get acquired rather than scaled.",
-      "cover": { "src": "pictures/cambridge.jpg", "alt": "Aerial view of King's College Chapel and surrounding Cambridge colleges in golden light." },
-      "tags": ["Cambridge", "Venture Capital", "Innovation"],
+      "summary": "$191B ecosystem, 45 acquisitions, 29 IPOs, lean valuations, and a unique licensing-led VC model. Why Cambridge produces extraordinary seed-stage outcomes \u2014 and why so many companies still get acquired rather than scaled.",
+      "cover": {
+        "src": "pictures/cambridge.jpg",
+        "alt": "Aerial view of King's College Chapel and surrounding Cambridge colleges in golden light."
+      },
+      "tags": [
+        "Cambridge",
+        "Venture Capital",
+        "Innovation"
+      ],
       "linkedin": "https://www.linkedin.com/posts/activity-7297087610999525376-8ewR",
       "page": "essays/cambridge-innovation-ecosystem-2025.html"
     }
