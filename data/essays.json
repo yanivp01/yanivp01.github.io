@@ -155,23 +155,6 @@
       ],
       "linkedin": "https://www.linkedin.com/posts/activity-7212437556683010048-CgYu",
       "page": "essays/sailing-into-the-unknown-phd-viva.html"
-    },
-    {
-      "id": "agent-based-modelling-supply-chain-financing",
-      "title": "Agent-Based Modelling of Firm-to-Firm Supply Chain Financing",
-      "date": "2023-04-27",
-      "summary": "Insights from the SCAIL research visit to the Complexity Science Hub Vienna \u2014 applying agent-based modeling to firm-to-firm supply chain financing and dynamic network resilience.",
-      "cover": {
-        "src": "pictures/talk_csh_vienna.png",
-        "alt": "SCAIL visit to Complexity Science Hub Vienna"
-      },
-      "tags": [
-        "Supply Chain",
-        "Complexity Science",
-        "Agent-Based Modelling"
-      ],
-      "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7057262126783979520",
-      "page": "essays/agent-based-modelling-supply-chain-financing.html"
     }
   ]
 }
