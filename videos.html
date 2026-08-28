@@ -181,6 +181,7 @@
             <!-- Local video player (hidden initially) -->
             <video id="player-local"
                    controls
+                   playsinline
                    poster="pictures/ai_native_startups_caribbean_thumb.jpg"
                    preload="metadata"
                    style="display:none;">
@@ -270,7 +271,8 @@
               Dr. Yaniv Proselkov speaking at the <strong>London Jewish Finance Network</strong> panel on how artificial intelligence is transforming capital allocation, risk modeling, and financial infrastructure.
             </p>
             <div class="paper-links" style="margin-top: 1.25rem;">
-              <a class="ext-link" href="https://www.linkedin.com/in/yaniv-proselkov/" target="_blank" rel="noopener noreferrer">LinkedIn Post &amp; Discussion ↗</a>
+              <a class="ext-link" href="https://www.linkedin.com/posts/activity-7333509493852418049-D_G6?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABpaMEMBl0xC9QSrLYl9gp0regxBgcN-Xfk" target="_blank" rel="noopener noreferrer">LinkedIn Post &amp; Discussion ↗</a>
+              <a class="pdf-link" href="videos/london_jewish_finance_network.mp4" download>Download Video File (.mp4)</a>
             </div>
           </div>
         </article>
@@ -291,10 +293,16 @@
       const tabLocal = document.getElementById('tab-local');
 
       if (type === 'local') {
+        // Pause YouTube by resetting src
+        const ytSrc = ytPlayer.src;
+        ytPlayer.src = ytSrc;
         ytPlayer.style.display = 'none';
         localPlayer.style.display = 'block';
         tabLocal.classList.add('active');
         tabYt.classList.remove('active');
+        if (localPlayer.readyState === 0) {
+          localPlayer.load();
+        }
       } else {
         localPlayer.style.display = 'none';
         localPlayer.pause();
