@@ -69,6 +69,24 @@
       border: 0;
       object-fit: cover;
     }
+    .video-player-container.vertical {
+      max-width: 380px;
+      margin: 1.25rem auto 1.5rem;
+      padding-bottom: 0;
+      height: auto;
+      aspect-ratio: 9 / 16;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .video-player-container.vertical video {
+      position: static;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
     .video-switcher {
       display: flex;
       gap: .5rem;
@@ -256,11 +274,12 @@
             Keynote &amp; Panel Discussion &bull; London Jewish Finance Network &bull; London, UK
           </p>
 
-          <div class="video-player-container" style="margin-top: 1.25rem;">
+          <div class="video-player-container vertical" style="margin-top: 1.25rem;">
             <video id="player-ljfn"
                    controls
-                   poster="pictures/yaniv speaking.jpg"
-                   preload="metadata">
+                   poster="pictures/ljfn_video_poster.jpg"
+                   preload="metadata"
+                   playsinline>
               <source src="videos/london_jewish_finance_network.mp4" type="video/mp4" />
               Your browser does not support HTML5 video.
             </video>
@@ -271,7 +290,7 @@
               Dr. Yaniv Proselkov speaking at the <strong>London Jewish Finance Network</strong> panel on how artificial intelligence is transforming capital allocation, risk modeling, and financial infrastructure.
             </p>
             <div class="paper-links" style="margin-top: 1.25rem;">
-              <a class="ext-link" href="https://www.linkedin.com/posts/activity-7333509493852418049-D_G6?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABpaMEMBl0xC9QSrLYl9gp0regxBgcN-Xfk" target="_blank" rel="noopener noreferrer">LinkedIn Post &amp; Discussion ↗</a>
+              <a class="ext-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7333509493852418049/?originTrackingId=a29w3%2BSgRWyWxGiL0kEqkw%3D%3D" target="_blank" rel="noopener noreferrer">LinkedIn Post &amp; Discussion ↗</a>
               <a class="pdf-link" href="videos/london_jewish_finance_network.mp4" download>Download Video File (.mp4)</a>
             </div>
           </div>
