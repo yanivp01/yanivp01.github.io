@@ -86,3 +86,19 @@ small, .small { font-size: 0.875rem; }
 .section-head { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2.5rem; }
 
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/*
+ * accessible-astro-components' AccordionItem (v5.8.0) applies its open/close
+ * transition on `details::details-content` unconditionally — only the
+ * chevron/plus icon rotation is gated behind `no-preference`. Neutralise the
+ * disclosure transition itself for reduced-motion users so every accordion
+ * on the site (course syllabi, the About page CV) snaps open/closed instead
+ * of animating.
+ */
+@media (prefers-reduced-motion: reduce) {
+  details.wrapper,
+  details.wrapper::details-content {
+    transition: none !important;
+    animation: none !important;
+  }
+}
