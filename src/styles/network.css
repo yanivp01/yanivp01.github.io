@@ -267,7 +267,9 @@
 
 /* SVG node hover */
 .node-group { cursor: pointer; }
-.node-group circle { transition: r .15s ease; }
+@media (prefers-reduced-motion: no-preference) {
+  .node-group circle { transition: r .15s ease; }
+}
 .node-group:hover circle.node-bg { filter: brightness(1.1); }
 
 /* Sidebar legend section */
@@ -281,3 +283,7 @@
 .network-layout--static { grid-template-columns: 1fr; margin-bottom: 0; }
 .node-group--static { cursor: default; }
 .node-group--static:hover circle.node-bg { filter: none; }
+
+/* Hero fallback (reduced motion / no WebGL / 3D failed): fit the 2D canvas to the 460px hero */
+.network--hero .network__2d .network-canvas { min-height: 0; height: 460px; }
+.network--hero .network__2d .network-canvas svg { min-height: 0; }

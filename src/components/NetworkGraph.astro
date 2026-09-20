@@ -14,20 +14,29 @@ const { mode } = Astro.props;
   const motionOK = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
   const webgl = (() => { try { const c = document.createElement('canvas'); return !!(c.getContext('webgl2') || c.getContext('webgl')); } catch { return false; } })();
 
-  roots.forEach(async (root) => {
+  roots.forEach((root) => {
     const mode = root.dataset.network as 'hero' | 'full';
     const el3d = root.querySelector<HTMLElement>('.network__3d')!;
     const el2d = root.querySelector<HTMLElement>('.network__2d')!;
-    if (motionOK && webgl) {
-      const { mountNetwork3D } = await import('../lib/network-3d');
-      const start = () => mountNetwork3D(el3d, { autoRotate: true, interactive: mode === 'full' });
-      if (mode === 'hero' && 'requestIdleCallback' in window) (window as any).requestIdleCallback(start); else start();
-      if (mode === 'hero') return; // hero is decorative; no 2D UI
-    } else {
-      el3d.remove();
-    }
-    const { mountNetwork2D } = await import('../lib/network-2d');
-    mountNetwork2D(el2d, { interactive: mode === 'full' });
+
+    let mounted2D = false;
+    const mount2D = async () => {
+      if (mounted2D) return;
+      mounted2D = true;
+      const { mountNetwork2D } = await import('../lib/network-2d');
+      mountNetwork2D(el2d, { interactive: mode === 'full' });
+    };
+    // 2D-only path: reduced motion, no WebGL, or the 3D island failed to load/mount.
+    const fallback = () => { el3d.remove(); root.classList.add('network--fallback'); return mount2D(); };
+
+    if (!(motionOK && webgl)) { fallback(); return; }
+
+    const start = () =>
+      import('../lib/network-3d')
+        .then(({ mountNetwork3D }) => mountNetwork3D(el3d, { autoRotate: true, interactive: mode === 'full' }))
+        .catch(fallback);
+    if (mode === 'hero' && 'requestIdleCallback' in window) (window as any).requestIdleCallback(start); else start();
+    if (mode === 'full') mount2D(); // hero is decorative; no 2D UI unless we fall back
   });
 </script>
 
@@ -36,6 +45,6 @@ const { mode } = Astro.props;
   .network--hero { height: 460px; }
   .network--hero .network__3d { position: absolute; inset: 0; }
   .network--hero .network__2d { display: none; }
+  .network--fallback .network__2d { display: block; }
   .network--full .network__3d { height: 560px; border: 1px solid var(--color-line); border-radius: var(--radius-lg); background: var(--color-surface); margin-bottom: 2rem; overflow: hidden; }
-  @media (prefers-reduced-motion: reduce) { .network--hero .network__2d { display: block; } }
 </style>
