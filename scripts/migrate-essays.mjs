@@ -16,6 +16,7 @@ for (const file of readdirSync('_legacy/essays').filter((f) => f.endsWith('.html
   const title = article.find('h1').first().text().trim();
   const date = article.find('time').attr('datetime');
   const cover = article.find('.essay-cover img').first();
+  const coverCaption = article.find('.essay-cover figcaption').text().trim();
   const linkedin = article.find('.essay-source a').attr('href');
   article.find('h1, .essay-meta, .essay-cover, .essay-back, .essay-rule, .essay-source').remove();
   article.find('img').each((_, img) => { const s = $(img).attr('src') || ''; $(img).attr('src', s.replace(/^\.\.\//, '/')); });
@@ -25,14 +26,21 @@ for (const file of readdirSync('_legacy/essays').filter((f) => f.endsWith('.html
     title: m?.title ?? title,
     date: m?.date ?? date,
     summary: m?.summary ?? $('meta[name="description"]').attr('content') ?? '',
-    cover: m?.cover ? { src: '/' + m.cover.src.replace(/^\/?/, ''), alt: m.cover.alt ?? '' } : cover.length ? { src: (cover.attr('src') || '').replace(/^\.\.\//, '/'), alt: cover.attr('alt') || '' } : undefined,
+    cover: m?.cover
+      ? { src: '/' + m.cover.src.replace(/^\/?/, ''), alt: m.cover.alt ?? '', ...(coverCaption ? { caption: coverCaption } : {}) }
+      : cover.length
+        ? { src: (cover.attr('src') || '').replace(/^\.\.\//, '/'), alt: cover.attr('alt') || '', ...(coverCaption ? { caption: coverCaption } : {}) }
+        : undefined,
     tags: m?.tags ?? [],
     linkedin: m?.linkedin ?? linkedin,
   };
   const lines = ['---'];
   for (const [k, v] of Object.entries(fm)) {
     if (v === undefined) continue;
-    if (k === 'cover') lines.push(`cover:\n  src: ${yaml(v.src)}\n  alt: ${yaml(v.alt)}`);
+    if (k === 'cover') {
+      lines.push(`cover:\n  src: ${yaml(v.src)}\n  alt: ${yaml(v.alt)}`);
+      if (v.caption) lines.push(`  caption: ${yaml(v.caption)}`);
+    }
     else if (Array.isArray(v)) lines.push(`${k}: [${v.map(yaml).join(', ')}]`);
     else lines.push(`${k}: ${yaml(v)}`);
   }

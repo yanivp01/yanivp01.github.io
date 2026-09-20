@@ -21,6 +21,6 @@ export const { getStaticPaths, GET } = await OGImageRoute({
       'node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2',
       'node_modules/@fontsource-variable/geist/files/geist-latin-wght-normal.woff2',
     ],
-    logo: { path: './public/pictures/logo-inverted.svg', size: [48] },
+    logo: { path: './src/assets/og-logo.png', size: [48] },
   }),
 });

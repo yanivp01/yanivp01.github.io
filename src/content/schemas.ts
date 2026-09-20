@@ -1,6 +1,7 @@
 import { z } from 'astro/zod';
 
 const image = z.object({ src: z.string(), alt: z.string().default('') });
+const essayCover = z.object({ src: z.string(), alt: z.string().default(''), caption: z.string().optional() });
 const link = z.object({ kind: z.enum(['pdf', 'ext', 'internal']).default('ext'), label: z.string().optional(), href: z.string() });
 
 export const paperSchema = z.object({
@@ -56,7 +57,7 @@ export const essaySchema = z.object({
   title: z.string(),
   date: z.coerce.date(),
   summary: z.string(),
-  cover: image.optional(),
+  cover: essayCover.optional(),
   tags: z.array(z.string()).default([]),
   linkedin: z.string().url().optional(),
   ogImage: z.string().optional(),

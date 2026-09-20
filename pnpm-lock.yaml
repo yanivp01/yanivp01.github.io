@@ -47,6 +47,9 @@ importers:
       astro-seo:
         specifier: ^1.2.0
         version: 1.2.0
+      canvaskit-wasm:
+        specifier: ^0.42.0
+        version: 0.42.0
       tailwind-merge:
         specifier: ^3.7.0
         version: 3.7.0
@@ -72,9 +75,6 @@ importers:
       '@playwright/test':
         specifier: ^1.63.0
         version: 1.63.0
-      canvaskit-wasm:
-        specifier: ^0.42.0
-        version: 0.42.0
       cheerio:
         specifier: ^1.2.0
         version: 1.2.0
