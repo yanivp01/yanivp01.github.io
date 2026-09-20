@@ -45,11 +45,9 @@
     "@iconify-json/simple-icons": "^1.2.97",
     "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.63.0",
-    "cheerio": "^1.2.0",
     "gray-matter": "^4.0.3",
     "prettier": "^3.9.8",
     "prettier-plugin-astro": "^1.0.1",
-    "turndown": "^7.2.4",
     "typescript": "^5.9.3",
     "vitest": "^5.0.1"
   }

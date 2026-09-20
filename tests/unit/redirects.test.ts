@@ -1,8 +1,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 
-const legacy = readFileSync(new URL('../../_legacy/sitemap.xml', import.meta.url), 'utf8');
-const paths = [...legacy.matchAll(/<loc>https:\/\/www\.yapros\.co\.uk(\/[^<]*)<\/loc>/g)].map((m) => m[1]).filter((p) => p !== '/');
+const paths = readFileSync(new URL('../fixtures/legacy-urls.txt', import.meta.url), 'utf8').split('\n').filter(Boolean);
 const dist = new URL('../../dist/', import.meta.url);
 
 describe('legacy URLs still resolve', () => {

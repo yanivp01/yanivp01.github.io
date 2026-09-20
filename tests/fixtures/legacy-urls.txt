@@ -1,0 +1,16 @@
+/bio.html
+/papers.html
+/blog.html
+/teaching.html
+/network.html
+/videos.html
+/essays/maritime-vs-continental-governance-ai.html
+/essays/next-great-teachers-ai-displaces.html
+/essays/multilayer-thinking-bubble-tricks.html
+/essays/a-new-name.html
+/essays/automating-venture-capital.html
+/essays/mushrooms-not-ecosystems.html
+/essays/tower-of-babel-vc-jargon.html
+/essays/due-diligence-in-vc.html
+/essays/sailing-into-the-unknown-phd-viva.html
+/essays/cambridge-innovation-ecosystem-2025.html

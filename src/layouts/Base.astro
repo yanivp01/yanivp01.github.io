@@ -15,7 +15,16 @@ interface Props {
 }
 const { title, description, ogImage = SITE.defaultOgImage, type = 'website', jsonLd = PERSON_JSON_LD } = Astro.props;
 const fullTitle = `${title} – ${SITE.name}`;
-const canonical = new URL(Astro.url.pathname, SITE.url).toString();
+
+// Under `build.format: 'file'`, Astro.url.pathname carries a trailing `.html`
+// (e.g. `/about.html`), which would otherwise leak into the canonical URL and
+// og:url. Normalise it back to the clean route the site actually serves.
+function normalizePathname(pathname: string): string {
+  const stripped = pathname.replace(/\.html$/, '');
+  if (stripped === '/index' || stripped === '') return '/';
+  return stripped;
+}
+const canonical = new URL(normalizePathname(Astro.url.pathname), SITE.url).toString();
 const absoluteImage = new URL(ogImage, SITE.url).toString();
 ---
 <!doctype html>

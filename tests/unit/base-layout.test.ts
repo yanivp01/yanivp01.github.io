@@ -15,4 +15,14 @@ describe('Base layout', () => {
     expect(html).toContain('"@type":"Person"');
     expect(html).toContain('<p>body</p>');
   });
+
+  it('normalises a .html pathname to a clean canonical URL', async () => {
+    const c = await AstroContainer.create();
+    const html = await c.renderToString(Base, {
+      props: { title: 'About', description: 'A test description.' },
+      request: new Request('https://www.yapros.co.uk/about.html'),
+      slots: { default: '<p>body</p>' },
+    });
+    expect(html).toContain('href="https://www.yapros.co.uk/about"');
+  });
 });
