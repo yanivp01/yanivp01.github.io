@@ -1,4 +1,8 @@
-@import "tailwindcss";
+/* Explicit theme + utilities imports (instead of the bundled `tailwindcss` entrypoint) so
+   Preflight's reset — notably `ol,ul{list-style:none}` — is never emitted. Preflight was zeroing
+   out list markers/indentation site-wide (essays, syllabi) since nothing here needs a CSS reset. */
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
 @import "tw-animate-css";
 @plugin "@tailwindcss/forms";
 @custom-variant dark (&:where(.dark, .dark *));

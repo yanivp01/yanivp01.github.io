@@ -51,7 +51,7 @@ export const videoSchema = z.object({
 
 export const testimonialSchema = z.object({ id: z.string(), quote: z.string(), name: z.string(), role: z.string(), org: z.string() });
 
-export const logoSchema = z.object({ id: z.string(), name: z.string(), src: z.string(), height: z.number(), wordmark: z.string().optional() });
+export const logoSchema = z.object({ id: z.string(), name: z.string(), src: z.string(), height: z.number(), width: z.number().optional(), wordmark: z.string().optional() });
 
 export const essaySchema = z.object({
   title: z.string(),

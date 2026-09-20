@@ -1,8 +1,8 @@
 [
-  { "id": "cambridge", "name": "Cambridge Judge Business School", "src": "/logos/cambridge-judge.png", "height": 40 },
-  { "id": "lbs", "name": "London Business School", "src": "/logos/london-business-school.svg", "height": 36 },
-  { "id": "imperial", "name": "Imperial College London", "src": "/logos/imperial-college-london.png", "height": 20 },
-  { "id": "turing", "name": "The Alan Turing Institute", "src": "/logos/alan-turing-institute.svg", "height": 34 },
-  { "id": "barclays", "name": "Barclays", "src": "/logos/barclays.svg", "height": 24 },
-  { "id": "bt", "name": "BT", "src": "/logos/bt.svg", "height": 32 }
+  { "id": "cambridge", "name": "Cambridge Judge Business School", "src": "/logos/cambridge-judge.png", "height": 40, "width": 130 },
+  { "id": "lbs", "name": "London Business School", "src": "/logos/london-business-school.svg", "height": 36, "width": 36 },
+  { "id": "imperial", "name": "Imperial College London", "src": "/logos/imperial-college-london.png", "height": 20, "width": 182 },
+  { "id": "turing", "name": "The Alan Turing Institute", "src": "/logos/alan-turing-institute.svg", "height": 34, "width": 80 },
+  { "id": "barclays", "name": "Barclays", "src": "/logos/barclays.svg", "height": 24, "width": 142 },
+  { "id": "bt", "name": "BT", "src": "/logos/bt.svg", "height": 32, "width": 32 }
 ]

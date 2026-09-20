@@ -29,4 +29,9 @@ describe('bookingHref', () => {
   it('strips surrounding quotes from a bare slug', () => {
     expect(bookingHref('Speaking enquiry', '"yaniv-proselkov/30min"')).toBe('https://cal.com/yaniv-proselkov/30min');
   });
+
+  it('strips a redundant leading cal.com host from a schemeless value', () => {
+    expect(bookingHref('Speaking enquiry', 'cal.com/yaniv/30min')).toBe('https://cal.com/yaniv/30min');
+    expect(bookingHref('Speaking enquiry', 'www.cal.com/yaniv/30min')).toBe('https://cal.com/yaniv/30min');
+  });
 });

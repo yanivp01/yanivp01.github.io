@@ -29,6 +29,15 @@ test('mobile nav opens', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('button', { name: 'Menu' }).click();
   await expect(page.getByRole('link', { name: 'Speaking' })).toBeVisible();
+
+  // Regression guard for the header's backdrop-filter containing-block bug: a `position: fixed`
+  // sheet inside a `backdrop-filter`ed header collapses to the header's own height and draws with
+  // no background, so the links overlay page content transparently instead of a full sheet.
+  const nav = page.locator('#site-nav');
+  const box = await nav.boundingBox();
+  expect(box?.height ?? 0).toBeGreaterThanOrEqual(300);
+  const bg = await nav.evaluate((el) => getComputedStyle(el).backgroundColor);
+  expect(bg).not.toBe('rgba(0, 0, 0, 0)');
 });
 
 test('no CTO copy anywhere', async ({ page }) => {

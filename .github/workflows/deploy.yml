@@ -8,8 +8,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 jobs:
   build:
@@ -30,6 +28,9 @@ jobs:
       - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm test:e2e
       - run: pnpm exec lhci autorun
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: lighthouse, path: .lighthouseci }
       - uses: actions/upload-pages-artifact@v3
         with: { path: dist }
 
@@ -37,6 +38,9 @@ jobs:
     if: github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment: { name: github-pages, url: '${{ steps.deployment.outputs.page_url }}' }
     steps:
       - id: deployment

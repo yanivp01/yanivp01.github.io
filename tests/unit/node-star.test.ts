@@ -17,6 +17,16 @@ describe('renderNodeStar', () => {
     expect(el.querySelector('.node-star__cols')).toBeNull();
   });
 
+  it('renders all 22 interventions as buttons in the empty state, and clicking one selects it', () => {
+    const onSelect = vi.fn();
+    renderNodeStar(el, null, { onSelect });
+    const buttons = el.querySelectorAll<HTMLButtonElement>('[data-node]');
+    expect(buttons).toHaveLength(22);
+    expect(buttons[0].dataset.node).toBe('1a');
+    buttons[0].click();
+    expect(onSelect).toHaveBeenCalledWith('1a');
+  });
+
   it('renders 3a with its label, layer chip and three columns from INTERVENTIONS', () => {
     renderNodeStar(el, '3a', { onSelect: () => {} });
     expect(el.dataset.node).toBe('3a');

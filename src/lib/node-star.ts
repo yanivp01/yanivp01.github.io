@@ -1,7 +1,7 @@
 /* Node-star panel: pure DOM rendering of one intervention's inputs / efforts / outputs and its
    incoming + outgoing connections. Framework-free; data comes from ./ecosystem-model. Used beside
    the 3D graph on /model (the 2D fallback carries its own star view). */
-import { CONNECTIONS, INTERVENTIONS, layerColor, layerName, type Intervention } from './ecosystem-model';
+import { CONNECTIONS, INTERVENTIONS, LAYERS, layerColor, layerName, type Intervention } from './ecosystem-model';
 
 export interface NodeStarOptions { onSelect(id: string | null): void }
 
@@ -34,6 +34,32 @@ function column(title: string, items: string[]): HTMLElement {
   ]);
 }
 
+/** Keyboard/no-pointer entry point: every intervention as a button, grouped by layer, so `/model`
+    is fully operable without clicking a node in the 3D canvas. */
+function nodeIndex(onSelect: NodeStarOptions['onSelect']): HTMLElement {
+  const groups = LAYERS.map((layer) => {
+    const nodes = INTERVENTIONS.filter((n) => n.layer === layer.n);
+    const list = h('ul', { class: 'node-star__index-list' });
+    for (const node of nodes) {
+      const btn = h('button', { type: 'button', class: 'node-star__index-btn', 'data-node': node.id }, [
+        h('span', { class: 'node-star__index-dot', style: `background:${layerColor(node.layer)}`, 'aria-hidden': 'true' }),
+        h('span', { class: 'node-star__index-id', text: node.id }),
+        h('span', { class: 'node-star__index-label', text: node.label }),
+      ]);
+      btn.addEventListener('click', () => onSelect(node.id));
+      list.append(h('li', {}, [btn]));
+    }
+    return h('div', { class: 'node-star__index-group' }, [
+      h('h4', { class: 'node-star__eyebrow' }, [
+        h('span', { class: 'node-star__index-dot', style: `background:${layer.color}`, 'aria-hidden': 'true' }),
+        `Layer ${layer.n}: ${layer.name}`,
+      ]),
+      list,
+    ]);
+  });
+  return h('div', { class: 'node-star__index' }, groups);
+}
+
 function edgeList(title: string, edges: Array<{ other: Intervention; label: string }>, onSelect: NodeStarOptions['onSelect']): HTMLElement {
   const list = h('ul', { class: 'node-star__edges' });
   if (edges.length === 0) list.append(h('li', { class: 'node-star__none', text: 'None' }));
@@ -62,6 +88,7 @@ export function renderNodeStar(panel: HTMLElement, nodeId: string | null, opts: 
     panel.append(
       h('p', { class: 'node-star__eyebrow', text: 'Node-star view' }),
       h('p', { class: 'node-star__prompt', text: EMPTY_PROMPT }),
+      nodeIndex(opts.onSelect),
     );
     return;
   }
@@ -81,7 +108,7 @@ export function renderNodeStar(panel: HTMLElement, nodeId: string | null, opts: 
     h('header', { class: 'node-star__head' }, [
       h('div', { class: 'node-star__title' }, [
         h('p', { class: 'node-star__id', text: node.id }),
-        h('h3', { class: 'node-star__label', text: node.label }),
+        h('h3', { class: 'node-star__label', 'aria-live': 'polite', text: node.label }),
         h('span', { class: 'node-star__chip', style: `--chip:${layerColor(node.layer)}` }, [
           h('span', { class: 'node-star__chip-dot', 'aria-hidden': 'true' }),
           `Layer ${node.layer}: ${layerName(node.layer)}`,

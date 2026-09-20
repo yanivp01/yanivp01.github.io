@@ -5,7 +5,7 @@ const { mode } = Astro.props;
 ---
 <div class:list={['network', `network--${mode}`]} data-network={mode}>
   <div class="network__3d" aria-hidden="true"></div>
-  {mode === 'full' && <aside class="network__panel node-star" aria-label="Node-star view" aria-live="polite" tabindex="-1"></aside>}
+  {mode === 'full' && <aside class="network__panel node-star" aria-label="Node-star view" tabindex="-1"></aside>}
   <div class="network__2d"></div>
   <noscript><p class="small">Enable JavaScript to explore the interactive ecosystem model.</p></noscript>
 </div>
@@ -37,7 +37,12 @@ const { mode } = Astro.props;
     const start = async () => {
       try {
         const { mountNetwork3D } = await import('../lib/network-3d');
-        if (mode === 'hero') { await mountNetwork3D(el3d, { autoRotate: true, interactive: false }); return; }
+        if (mode === 'hero') {
+          // Hero graph: flat ink nodes (no layer colour-coding — that's a /model-only detail),
+          // no clicks, still pointer-reactive (drag rotates; see network-3d's enableRotate).
+          await mountNetwork3D(el3d, { autoRotate: true, interactive: false, nodeColor: () => '#0e0e10' });
+          return;
+        }
 
         // Full mode: 3D graph + node-star panel. Node/background clicks and the panel's own
         // controls all route through select(), which keeps graph highlight and panel in sync.
@@ -101,7 +106,14 @@ const { mode } = Astro.props;
     font-size: 0.875rem;
   }
   .network__panel :global(.node-star__eyebrow) { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-muted); margin: 0 0 0.5rem; }
-  .network__panel :global(.node-star__prompt) { color: var(--color-muted); margin: 0; }
+  .network__panel :global(.node-star__prompt) { color: var(--color-muted); margin: 0 0 1rem; }
+  .network__panel :global(.node-star__index) { display: grid; gap: 1rem; }
+  .network__panel :global(.node-star__index-group h4) { display: flex; align-items: center; gap: 0.4rem; }
+  .network__panel :global(.node-star__index-list) { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.15rem; }
+  .network__panel :global(.node-star__index-btn) { display: flex; align-items: baseline; gap: 0.5rem; width: 100%; text-align: left; font: inherit; font-size: 0.8rem; color: var(--color-text); background: transparent; border: 0; border-radius: var(--radius); padding: 0.3rem 0.35rem; cursor: pointer; }
+  .network__panel :global(.node-star__index-btn:hover) { background: var(--color-surface-2); color: var(--color-ink); }
+  .network__panel :global(.node-star__index-dot) { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; align-self: center; }
+  .network__panel :global(.node-star__index-id) { font-family: var(--font-mono); font-size: 0.7rem; color: var(--color-muted); }
   .network__panel :global(.node-star__head) { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
   .network__panel :global(.node-star__id) { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; color: var(--color-muted); margin: 0 0 0.2rem; }
   .network__panel :global(.node-star__label) { font-size: 1.25rem; line-height: 1.15; margin: 0 0 0.5rem; }
@@ -122,6 +134,7 @@ const { mode } = Astro.props;
   .network__panel :global(.node-star__edge-label) { color: var(--color-muted); }
   @media (prefers-reduced-motion: no-preference) {
     .network__panel :global(.node-star__close),
-    .network__panel :global(.node-star__edge) { transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease; }
+    .network__panel :global(.node-star__edge),
+    .network__panel :global(.node-star__index-btn) { transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease; }
   }
 </style>

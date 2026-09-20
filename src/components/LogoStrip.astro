@@ -8,7 +8,7 @@ const { logos, label = 'Spoken at' } = Astro.props;
     <span class="eyebrow">{label}</span>
     {logos.map((l) => (
       <span class="strip__logo">
-        <img src={l.src} alt={l.name} height={l.height} style={`height:${l.height}px`} loading="lazy" />
+        <img src={l.src} alt={l.name} width={l.width} height={l.height} style={`height:${l.height}px`} loading="lazy" />
         {l.wordmark && <span class="strip__wordmark">{l.wordmark}</span>}
       </span>
     ))}

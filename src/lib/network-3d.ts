@@ -11,6 +11,10 @@ export interface Network3DOptions {
   interactive?: boolean;
   /** Fired on node click (with the node id) and on background click (with null). Only in interactive mode. */
   onNodeClick?(id: string | null): void;
+  /** Base per-node colour, before selection dimming/highlighting is applied. Defaults to
+      `layerColor(n.layer)` (full-mode `/model` behaviour); the hero graph overrides this to a
+      flat ink colour so it reads as a single shape rather than a layer-coded diagram. */
+  nodeColor?(node: { layer: number }): string;
 }
 
 const ACCENT = '#1f4ed8';
@@ -31,14 +35,14 @@ const endId = (end: unknown) => (typeof end === 'object' && end !== null ? Strin
 
 export async function mountNetwork3D(el: HTMLElement, opts: Network3DOptions = {}): Promise<Network3DHandle> {
   const { default: ForceGraph3D } = await import('3d-force-graph');
-  const { autoRotate = true, interactive = true, onNodeClick } = opts;
+  const { autoRotate = true, interactive = true, onNodeClick, nodeColor: baseNodeColor = (n: { layer: number }) => layerColor(n.layer) } = opts;
   const data = toGraphData();
 
   // Selection state drives the colour accessors; neighbours are computed from the link list.
   let selected: string | null = null;
   const neighbours = new Set<string>();
   const nodeColor = (n: any): string => {
-    const base = layerColor(n.layer);
+    const base = baseNodeColor(n);
     if (!selected) return base;
     if (n.id === selected) return lighten(base, 0.35);
     return neighbours.has(n.id) ? base : rgba(base, DIM_NODE_ALPHA);
@@ -80,7 +84,9 @@ export async function mountNetwork3D(el: HTMLElement, opts: Network3DOptions = {
   const controls = graph.controls() as any;
   controls.autoRotate = autoRotate;
   controls.autoRotateSpeed = 0.6;
-  if (!interactive) { controls.enableRotate = false; controls.enableZoom = false; controls.enablePan = false; }
+  // Hero (non-interactive) mode: no clicks, no zoom/pan, but rotation stays on so the graph is
+  // still pointer-reactive — dragging spins it, distinct from the ambient auto-rotate.
+  if (!interactive) { controls.enableZoom = false; controls.enablePan = false; }
 
   if (interactive) {
     graph.onNodeClick((n: any) => onNodeClick?.(String(n.id)));

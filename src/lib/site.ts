@@ -21,9 +21,6 @@ export const SITE = {
   defaultOgImage: '/pictures/yaniv standing.jpg',
   description:
     'Researcher, AI engineer and public speaker on how things spread through networks — money, risk, ideas — across AI, supply-chain finance and innovation ecosystems.',
-  booking: {
-    calLink: import.meta.env.PUBLIC_CAL_LINK as string | undefined,
-  },
 } as const;
 
 const stripQuotes = (s: string) => s.trim().replace(/^["']+|["']+$/g, '').trim();
@@ -42,7 +39,8 @@ export function bookingHref(subject: string, raw: string | undefined = import.me
   const value = raw ? stripQuotes(raw) : '';
   if (!value) return SITE.mailto(subject);
   if (/^https?:\/\//i.test(value)) return value;
-  return `https://cal.com/${value.replace(/^\/+/, '')}`;
+  const slug = value.replace(/^\/+/, '').replace(/^(www\.)?cal\.com\//i, '');
+  return `https://cal.com/${slug}`;
 }
 
 export const PERSON_JSON_LD = {

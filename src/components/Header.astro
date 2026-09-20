@@ -23,12 +23,28 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
 <script>
   const toggle = document.querySelector<HTMLButtonElement>('.nav-toggle');
   const nav = document.getElementById('site-nav');
+
+  const closeNav = () => {
+    toggle?.setAttribute('aria-expanded', 'false');
+    nav?.classList.remove('is-open');
+    document.body.classList.remove('nav-open');
+  };
+
   toggle?.addEventListener('click', () => {
     const open = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', String(!open));
     nav?.classList.toggle('is-open', !open);
     document.body.classList.toggle('nav-open', !open);
   });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') closeNav();
+  });
+
+  // Reset the mobile sheet state when the viewport grows past the breakpoint, so a resize
+  // (or rotating a tablet) never leaves `nav-open`/`aria-expanded="true"` stuck from a smaller width.
+  const desktopMq = window.matchMedia('(min-width: 801px)');
+  desktopMq.addEventListener('change', (e) => { if (e.matches) closeNav(); });
 </script>
 
 <style>
@@ -44,7 +60,11 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
   .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--color-ink); margin: 0 auto; }
   @media (max-width: 800px) {
     .nav-toggle { display: flex; }
-    .site-nav { display: none; position: fixed; inset: 72px 0 0 0; background: var(--color-surface); padding: 2rem 1.5rem; }
+    /* `.site-header` is `backdrop-filter`ed, which makes it the containing block for fixed
+       descendants — a `position: fixed` sheet here collapses to the header's own height. The
+       header is sticky and body scroll is locked while open, so an absolutely-positioned sheet
+       anchored to the header's bottom edge covers the same area without that trap. */
+    .site-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; height: calc(100dvh - 72px); overflow-y: auto; background: var(--color-surface); padding: 2rem 1.5rem; }
     .site-nav.is-open { display: block; }
     .site-nav ul { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
     .site-nav a { font-size: 1.25rem; }
