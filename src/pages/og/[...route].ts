@@ -5,7 +5,6 @@ const essays = await getCollection('essays');
 const pages = Object.fromEntries(essays.map((e) => [`essays/${e.id}`, { title: e.data.title, description: e.data.summary }]));
 
 export const { getStaticPaths, GET } = await OGImageRoute({
-  param: 'route',
   pages,
   getImageOptions: (_path, page) => ({
     title: page.title,

@@ -41,6 +41,7 @@
     "esbuild": true
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.10",
     "@iconify-json/lucide": "^1.2.135",
     "@iconify-json/simple-icons": "^1.2.97",
     "@lhci/cli": "^0.15.1",
