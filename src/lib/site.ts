@@ -1,3 +1,12 @@
+export const NAV = [
+  { label: 'Speaking', href: '/speaking' },
+  { label: 'Teaching', href: '/teaching' },
+  { label: 'Research', href: '/research' },
+  { label: 'Essays', href: '/essays' },
+  { label: 'Model', href: '/model' },
+  { label: 'About', href: '/about' },
+] as const;
+
 export const SITE = {
   name: 'Dr. Yaniv Proselkov',
   shortName: 'Yaniv Proselkov',
