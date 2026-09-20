@@ -1,0 +1,35 @@
+---
+import { Icon } from 'astro-icon/components';
+import type { Paper } from '../content/schemas';
+interface Props { paper: Paper }
+const { paper } = Astro.props;
+const labelFor = (l: Paper['links'][number]) => l.label ?? (l.kind === 'pdf' ? 'Read PDF' : l.kind === 'internal' ? 'Open' : 'Link');
+---
+<article class="card paper">
+  {paper.image && <img src={paper.image.src} alt={paper.image.alt} loading="lazy" width="160" height="160" />}
+  <div class="paper__body">
+    <h3>{paper.title}</h3>
+    <p class="meta">{paper.byline}</p>
+    <p class="small">{paper.blurb}</p>
+    <div class="paper__links">
+      {paper.links.map((l) => (
+        <a class:list={['chip', { 'chip--pdf': l.kind === 'pdf' }]} href={l.href} target={l.kind === 'internal' ? undefined : '_blank'} rel={l.kind === 'internal' ? undefined : 'noopener noreferrer'}>
+          <Icon name={l.kind === 'pdf' ? 'lucide:download' : l.kind === 'internal' ? 'lucide:arrow-right' : 'lucide:external-link'} size={14} />
+          {labelFor(l)}
+        </a>
+      ))}
+    </div>
+  </div>
+</article>
+<style>
+  .paper { display: grid; grid-template-columns: 160px 1fr; gap: 1.5rem; align-items: start; }
+  .paper img { width: 160px; height: 160px; object-fit: contain; border: 1px solid var(--color-line); border-radius: var(--radius); background: var(--color-surface-2); }
+  .paper h3 { font-size: 1.375rem; margin-bottom: 0.375rem; }
+  .paper .meta { margin-bottom: 0.625rem; }
+  .paper__links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.875rem; }
+  .chip { display: inline-flex; align-items: center; gap: 0.375rem; padding: 0.375rem 0.75rem; border-radius: var(--radius-pill); border: 1px solid var(--color-line); font-size: 0.8125rem; font-weight: 500; color: var(--color-ink); }
+  .chip:hover { border-color: var(--color-accent); color: var(--color-accent); }
+  .chip--pdf { background: var(--color-ink); color: #fff; border-color: var(--color-ink); }
+  .chip--pdf:hover { background: #26262b; color: #fff; }
+  @media (max-width: 560px) { .paper { grid-template-columns: 1fr; } .paper img { width: 100%; height: auto; aspect-ratio: 1; } }
+</style>

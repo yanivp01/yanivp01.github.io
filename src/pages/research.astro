@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PaperCard from '../components/PaperCard.astro';
+import ClosingBand from '../components/ClosingBand.astro';
+import { SITE } from '../lib/site';
+const papers = (await getCollection('papers')).map((p) => p.data).sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+const groups = [
+  { id: 'academic', title: 'Academic papers', items: papers.filter((p) => p.category === 'academic') },
+  { id: 'theses', title: 'Theses', items: papers.filter((p) => p.category === 'thesis') },
+  { id: 'think-tank', title: 'Think-tank pieces', items: papers.filter((p) => p.category === 'think-tank') },
+];
+---
+<Base title="Research" description="Peer-reviewed papers, doctoral and master's theses, and think-tank publications on network science, supply-chain finance, autonomous systems and innovation ecosystems.">
+  <section class="section section--surface">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Research</p>
+        <h1>Networks, finance and autonomous systems.</h1>
+        <p class="small">Seven peer-reviewed papers, three theses and five think-tank reports. Also on <a href={SITE.scholar} target="_blank" rel="noopener noreferrer">Google Scholar</a> and <a href={SITE.researchgate} target="_blank" rel="noopener noreferrer">ResearchGate</a>.</p>
+      </div>
+      {groups.map((g) => (
+        <section id={g.id} class="group">
+          <h2>{g.title}</h2>
+          <div class="list">{g.items.map((paper) => <PaperCard paper={paper} />)}</div>
+        </section>
+      ))}
+    </div>
+  </section>
+  <ClosingBand heading="Interested in collaborating on research?" />
+</Base>
+<style>
+  .group { margin-bottom: 4rem; }
+  .group h2 { margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--color-line); }
+  .list { display: grid; gap: 1.25rem; }
+</style>
