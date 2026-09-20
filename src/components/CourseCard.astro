@@ -32,3 +32,19 @@ const { course } = Astro.props;
   .modules { padding-left: 1.25rem; display: grid; gap: 0.5rem; font-size: 0.9375rem; }
   @media (max-width: 600px) { .spec { grid-template-columns: 1fr; } }
 </style>
+<style is:global>
+  /*
+   * accessible-astro-components' AccordionItem (v5.8.0) applies its open/close
+   * transition on `details::details-content` unconditionally — only the
+   * chevron/plus icon rotation is gated behind `no-preference`. Neutralise the
+   * disclosure transition itself for reduced-motion users so the syllabus
+   * accordion snaps open/closed instead of animating.
+   */
+  @media (prefers-reduced-motion: reduce) {
+    .course details.wrapper,
+    .course details.wrapper::details-content {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+</style>
