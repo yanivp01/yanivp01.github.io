@@ -1,0 +1,61 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import EssayCard from '../../components/EssayCard.astro';
+import ClosingBand from '../../components/ClosingBand.astro';
+import { formatDate, getEssays, related } from '../../lib/essays';
+import { PERSON_JSON_LD, SITE } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const essays = await getEssays();
+  return essays.map((essay, i) => ({
+    params: { slug: essay.id },
+    props: { essay, essays, prev: essays[i + 1], next: essays[i - 1] },
+  }));
+}
+const { essay, essays, prev, next } = Astro.props;
+const { Content } = await render(essay);
+const ogImage = essay.data.ogImage ?? `/og/essays/${essay.id}.png`;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: essay.data.title,
+  datePublished: essay.data.date.toISOString(),
+  author: { '@id': `${SITE.url}/#person` },
+  image: new URL(ogImage, SITE.url).toString(),
+  mainEntityOfPage: new URL(`/essays/${essay.id}`, SITE.url).toString(),
+};
+---
+<Base title={essay.data.title} description={essay.data.summary} ogImage={ogImage} type="article" jsonLd={[PERSON_JSON_LD, jsonLd]}>
+  <article class="section section--surface">
+    <div class="prose">
+      <p class="eyebrow"><a href="/essays">← All essays</a></p>
+      <h1>{essay.data.title}</h1>
+      <p class="meta">{formatDate(essay.data.date)}</p>
+      {essay.data.cover && <img class="cover" src={essay.data.cover.src} alt={essay.data.cover.alt} width="1200" height="675" />}
+      <div class="body"><Content /></div>
+      {essay.data.linkedin && <p class="source">Originally published on LinkedIn — <a href={essay.data.linkedin} target="_blank" rel="noopener noreferrer">view the original post and discussion ↗</a></p>}
+      <nav class="pager" aria-label="Essay navigation">
+        {prev ? <a href={`/essays/${prev.id}`}>← {prev.data.title}</a> : <span />}
+        {next && <a href={`/essays/${next.id}`}>{next.data.title} →</a>}
+      </nav>
+    </div>
+  </article>
+  <section class="section section--bg">
+    <div class="wrap">
+      <p class="eyebrow">Related</p>
+      <div class="related">{related(essays, essay).map((e) => <EssayCard essay={e} />)}</div>
+    </div>
+  </section>
+  <ClosingBand />
+</Base>
+<style>
+  h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); margin: 0.75rem 0 0.5rem; }
+  .cover { margin: 2rem 0; border-radius: var(--radius-lg); aspect-ratio: 16/9; object-fit: cover; }
+  .body :global(p) { margin-bottom: 1.25rem; font-size: 1.125rem; line-height: 1.7; }
+  .body :global(h2) { margin: 2.5rem 0 1rem; font-size: 2rem; }
+  .body :global(blockquote) { border-left: 2px solid var(--color-accent); padding-left: 1rem; color: var(--color-muted); font-style: italic; }
+  .source { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--color-line); color: var(--color-muted); font-size: 0.9375rem; }
+  .pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2rem; font-size: 0.9375rem; }
+  .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+</style>

@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import EssayCard from '../components/EssayCard.astro';
+import ClosingBand from '../components/ClosingBand.astro';
+import { getEssays } from '../lib/essays';
+const essays = await getEssays();
+---
+<Base title="Essays" description="Short-form writing on venture capital, innovation ecosystems, AI and the strategy of how systems scale.">
+  <section class="section section--surface">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Essays</p>
+        <h1>Short-form writing on how systems scale.</h1>
+        <p class="small">Venture capital, innovation ecosystems and AI. Most pieces were first published on LinkedIn; each links to its discussion thread.</p>
+      </div>
+      <div class="grid">{essays.map((essay) => <EssayCard essay={essay} />)}</div>
+    </div>
+  </section>
+  <ClosingBand />
+</Base>
+<style>
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+</style>
