@@ -1,0 +1,345 @@
+[
+  {
+    "id": "modelling-viable-supply-networks-with-cooperative-adaptive-f",
+    "title": "Modelling Viable Supply Networks with Cooperative Adaptive Financing",
+    "byline": "Y Proselkov, L Xu, A Brintrup (2026). arXiv preprint.",
+    "blurb": "Proposes a decentralised financing mechanism to improve supply chain viability using cooperative adaptation.",
+    "image": {
+      "src": "/pictures/scale_free_supply_chain.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "arXiv:2601.13210",
+        "href": "https://arxiv.org/abs/2601.13210"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/academic_papers/Modelling%20viable%20supply%20networks%20with%20cooperative%20adaptive%20financing.pdf"
+      }
+    ],
+    "category": "academic",
+    "year": 2026
+  },
+  {
+    "id": "towards-autonomous-supply-chains-definition-characteristics-",
+    "title": "Towards Autonomous Supply Chains: Definition, Characteristics, Conceptual Framework, and Autonomy Levels",
+    "byline": "L Xu, S Mak, Y Proselkov, A Brintrup (2024). Journal of Industrial Information Integration.",
+    "blurb": "Establishes a foundational framework and autonomy levels for the transition toward fully autonomous supply chains.",
+    "image": {
+      "src": "/pictures/autonomous_supply_chain.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "ScienceDirect",
+        "href": "https://www.sciencedirect.com/science/article/pii/S2452414X24001419"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/academic_papers/Towards%20autonomous%20supply%20chains%20-%20Definition%2C%20characteristics%2C%20conceptual%20framework%2C%20and%20autonomy%20levels.pdf"
+      }
+    ],
+    "category": "academic",
+    "year": 2024
+  },
+  {
+    "id": "financial-ripple-effect-in-complex-adaptive-supply-networks-",
+    "title": "Financial Ripple Effect in Complex Adaptive Supply Networks: An Agent-Based Model",
+    "byline": "Y Proselkov, J Zhang, L Xu, E Hofmann, T Choi, D Rogers, A Brintrup (2023). International Journal of Production Research.",
+    "blurb": "Investigates how financial distress propagates through complex supply networks using an agent-based approach.",
+    "image": {
+      "src": "/pictures/broken_lattice.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "Taylor & Francis (IJPR)",
+        "href": "https://www.tandfonline.com/doi/full/10.1080/00207543.2023.2173509"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/academic_papers/Financial%20ripple%20effect%20in%20complex%20adaptive%20supply%20networks%20an%20agent-based%20model.pdf"
+      }
+    ],
+    "category": "academic",
+    "year": 2023
+  },
+  {
+    "id": "implementation-of-autonomous-supply-chains-for-digital-twinn",
+    "title": "Implementation of Autonomous Supply Chains for Digital Twinning: A Multi-Agent Approach",
+    "byline": "L Xu, Y Proselkov, S Schoepf, D Minarsch, M Minaricova, A Brintrup (2023). IFAC-PapersOnLine 56(2), 11076–11081.",
+    "blurb": "Details a multi-agent system architecture for creating digital twins of autonomous supply chains.",
+    "image": {
+      "src": "/pictures/oef_chain.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "ScienceDirect (IFAC)",
+        "href": "https://www.sciencedirect.com/science/article/pii/S2405896323011898"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/academic_papers/Implementation%20of%20Autonomous%20Supply%20Chains%20for%20Digital%20Twinning%20-%20a%20Multi-Agent%20Approach.pdf"
+      }
+    ],
+    "category": "academic",
+    "year": 2023
+  },
+  {
+    "id": "the-value-of-information-for-dynamic-decentralised-criticali",
+    "title": "The Value of Information for Dynamic Decentralised Criticality Computation",
+    "byline": "Y Proselkov, M Herrera, M Perez-Hernandez, AK Parlikad, A Brintrup (2022). IFAC-PapersOnLine 55(2), 408–413.",
+    "blurb": "Explores decentralised methods for assessing node criticality in dynamic networks based on information value.",
+    "image": {
+      "src": "/pictures/outer_backbone.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "ScienceDirect (IFAC)",
+        "href": "https://www.sciencedirect.com/science/article/pii/S2405896322002294"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/academic_papers/The%20value%20of%20information%20for%20dynamic%20decentralised%20criticality%20computation.pdf"
+      }
+    ],
+    "category": "academic",
+    "year": 2022
+  },
+  {
+    "id": "mining-graph-fourier-transform-time-series-for-anomaly-detec",
+    "title": "Mining Graph-Fourier Transform Time Series for Anomaly Detection of Internet Traffic at Core and Metro Networks",
+    "byline": "M Herrera, Y Proselkov, M Perez-Hernandez, AK Parlikad (2021). IEEE Access 9, 8997–9011.",
+    "blurb": "Applies Graph-Fourier transforms to detect anomalies in large-scale telecommunication traffic data.",
+    "image": {
+      "src": "/pictures/telco_network_vis.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "IEEE Xplore",
+        "href": "https://ieeexplore.ieee.org/abstract/document/9316656"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/academic_papers/Mining%20Graph-Fourier%20Transform%20Time%20Series%20for%20Anomaly%20Detection%20of%20Internet%20Traffic%20at%20Core%20and%20Metro%20Networks.pdf"
+      }
+    ],
+    "category": "academic",
+    "year": 2021
+  },
+  {
+    "id": "distributed-dynamic-measures-of-criticality-for-telecommunic",
+    "title": "Distributed Dynamic Measures of Criticality for Telecommunication Networks",
+    "byline": "Y Proselkov, M Herrera, AK Parlikad, A Brintrup (2020). SOHOMA, 1–12.",
+    "blurb": "Introduces distributed algorithms for computing criticality metrics in evolving telecommunication infrastructures.",
+    "image": {
+      "src": "/pictures/dist_dyn_graph.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "SpringerLink",
+        "href": "https://link.springer.com/chapter/10.1007/978-3-030-69373-2_30"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/academic_papers/Distributed%20Dynamic%20Measures%20of%20Criticality%20for%20Telecommunication%20Networks.pdf"
+      }
+    ],
+    "category": "academic",
+    "year": 2020
+  },
+  {
+    "id": "scalable-autonomous-network-control-using-minimally-informed",
+    "title": "Scalable Autonomous Network Control using Minimally Informed Agents",
+    "byline": "PhD Thesis, University of Cambridge, Institute for Manufacturing, Christ's College (2024).",
+    "blurb": "Doctoral research developing scalable control mechanisms for complex networks utilizing agents with limited local information.",
+    "image": {
+      "src": "/pictures/christs.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "Cambridge Repository",
+        "href": "https://www.repository.cam.ac.uk/items/aac76992-c5b3-4be3-9df7-cd246c687f7b"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/theses/Scalable%20Autonomous%20Network%20Control%20using%20Minimally%20Informed%20Agents.pdf"
+      }
+    ],
+    "category": "thesis",
+    "year": 2024
+  },
+  {
+    "id": "triple-jumping-over-fragmentation-epidemics-and-spontaneous-",
+    "title": "Triple-Jumping over Fragmentation, Epidemics, and Spontaneous Adaption",
+    "byline": "MSc Thesis, University of Bristol, Department of Engineering Mathematics (2018).",
+    "blurb": "Master's thesis examining fragmentation and spontaneous adaptation in network epidemic models.",
+    "image": {
+      "src": "/pictures/bristol.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "ResearchGate",
+        "href": "https://www.researchgate.net/publication/364699939_Triple-Jumping_over_Fragmentation_Epidemics_and_Spontaneous_Adaption"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/theses/Triple-Jumping%20over%20Fragmentation%20Epidemics%20and%20Spontaneous%20Adaption.pdf"
+      }
+    ],
+    "category": "thesis",
+    "year": 2018
+  },
+  {
+    "id": "exploring-bounds-of-the-3-state-misanthrope-interacting-part",
+    "title": "Exploring bounds of the 3 state misanthrope interacting particle system to ensure stationarity and translation-invariance, with other results",
+    "byline": "BSc(Hons) Thesis, University of Bristol, Department of Mathematics (2017).",
+    "blurb": "Bachelors's thesis studying the nonstationary behaviour of 3 state misanthropic interacting particle systems.",
+    "image": {
+      "src": "/pictures/picdots2.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/theses/Bounding_the_3_state_interacting_particle_misanthrope_process.pdf"
+      }
+    ],
+    "category": "thesis",
+    "year": 2017
+  },
+  {
+    "id": "bridging-universities-capital-and-real-world-projects-a-tran",
+    "title": "Bridging Universities, Capital, and Real-World Projects: A Translational Framework for Impact Measurement",
+    "byline": "S Choo, S Castello, Y Proselkov (2026). SSRN preprint.",
+    "blurb": "A translational framework aimed at measuring real-world impact across academic and financial projects.",
+    "image": {
+      "src": "/pictures/bridging_universities_impact.png",
+      "alt": "Bridging Universities, Capital, and Real-World Projects conceptual graphic"
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "SSRN preprint",
+        "href": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6622798"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/think_tank_pieces/Bridging%20Universities%20and%20Capital%20and%20Real-World%20Projects.pdf"
+      }
+    ],
+    "category": "think-tank",
+    "year": 2026
+  },
+  {
+    "id": "grand-theft-ai-restructuring-the-economy-to-align-with-ai",
+    "title": "Grand Theft AI: Restructuring the Economy to Align with AI",
+    "byline": "Y Proselkov (2026). TRENDS Research & Advisory.",
+    "blurb": "Explores how economic structures must evolve to harness and align with the integration of artificial intelligence.",
+    "image": {
+      "src": "/pictures/Grand-Theft-AI.jpg",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "TRENDS Research",
+        "href": "https://trendsresearch.org/insight/grand-theft-ai-restructuring-economy-to-align-with-ai/"
+      }
+    ],
+    "category": "think-tank",
+    "year": 2026
+  },
+  {
+    "id": "scaling-businesses-out-of-cambridge",
+    "title": "Scaling Businesses Out of Cambridge",
+    "byline": "Y Proselkov. Global Cambridge — strategic report on scaling businesses out of the Cambridge ecosystem.",
+    "blurb": "Strategic overview identifying pathways and policies to scale businesses globally from the Cambridge hub.",
+    "image": {
+      "src": "/pictures/gci.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "Global Cambridge — Strategy",
+        "href": "https://www.globalcambridge.org/strategy/"
+      },
+      {
+        "kind": "ext",
+        "label": "Global Cambridge — Reports",
+        "href": "https://www.globalcambridge.org/reports/"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/think_tank_pieces/Scaling%20Businesses%20Out%20of%20Cambridge.pdf"
+      }
+    ],
+    "category": "think-tank"
+  },
+  {
+    "id": "systematising-startup-creation-in-cambridge",
+    "title": "Systematising Startup Creation in Cambridge",
+    "byline": "Y Proselkov. Global Cambridge — a five-layer production model for systematising startup creation and retaining innovation in the Cambridge ecosystem.",
+    "blurb": "Presents a five-layer production model aimed at retaining innovation and streamlining startup formation.",
+    "image": {
+      "src": "/pictures/multilayer_operationalisation.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "Global Cambridge — Reports",
+        "href": "https://www.globalcambridge.org/reports/"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/think_tank_pieces/Systematising_Startup_Creation_in_Cambridge_A_Five_Layer_Production_Model_for_Retained_Innovation.pdf"
+      }
+    ],
+    "category": "think-tank"
+  },
+  {
+    "id": "scaling-out-the-cambridge-investment-zone",
+    "title": "Scaling out the Cambridge Investment Zone",
+    "byline": "Y Proselkov. Global Cambridge — strategic piece on AI-native infrastructure for ecosystem automation, fintech integration, and global hub connectivity.",
+    "blurb": "Outlines the integration of AI-native infrastructure to connect the Cambridge Investment Zone globally.",
+    "image": {
+      "src": "/pictures/multilayer_scaling.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "Global Cambridge — Reports",
+        "href": "https://www.globalcambridge.org/reports/"
+      },
+      {
+        "kind": "pdf",
+        "href": "/papers_pdf/think_tank_pieces/AI_Native_Infrastructure_for_Ecosystem_Automation__Fintech_Integration__and_Global_Hub_Connectivity.pdf"
+      },
+      {
+        "kind": "internal",
+        "label": "Explore the interactive node-star network",
+        "href": "network.html"
+      }
+    ],
+    "category": "think-tank"
+  }
+]
