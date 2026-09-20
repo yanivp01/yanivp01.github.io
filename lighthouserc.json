@@ -1,6 +1,6 @@
 {
   "ci": {
-    "collect": { "staticDistDir": "./dist", "url": ["http://localhost/index.html"], "numberOfRuns": 2 },
+    "collect": { "staticDistDir": "./dist", "url": ["http://localhost/index.html"], "numberOfRuns": 3 },
     "assert": {
       "assertions": {
         "categories:performance": ["error", { "minScore": 0.9 }],
