@@ -12,6 +12,14 @@ export default defineConfig({
   trailingSlash: 'never',
   build: { format: 'file' },
   integrations: [mdx(), sitemap(), icon()],
+  redirects: {
+    '/bio': '/about',
+    '/papers': '/research',
+    '/blog': '/essays',
+    '/network': '/model',
+    '/videos': '/speaking#videos',
+    '/sitemap': '/sitemap-index.xml',
+  },
   vite: {
     plugins: [tailwindcss()],
   },
