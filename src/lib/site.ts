@@ -21,7 +21,29 @@ export const SITE = {
   defaultOgImage: '/pictures/yaniv standing.jpg',
   description:
     'Researcher, AI engineer and public speaker on how things spread through networks — money, risk, ideas — across AI, supply-chain finance and innovation ecosystems.',
+  booking: {
+    calLink: import.meta.env.PUBLIC_CAL_LINK as string | undefined,
+  },
 } as const;
+
+const stripQuotes = (s: string) => s.trim().replace(/^["']+|["']+$/g, '').trim();
+
+/**
+ * Resolves the "Book a talk" destination.
+ *
+ * When `PUBLIC_CAL_LINK` is set (a full URL like `https://cal.com/yaniv/30min`,
+ * possibly wrapped in quotes, or a bare `user/event` slug), returns the
+ * normalised Cal.com URL. Otherwise falls back to a mailto link.
+ *
+ * `raw` is exposed as a parameter (defaulting to the env var) so tests can
+ * exercise every branch without depending on `.env`.
+ */
+export function bookingHref(subject: string, raw: string | undefined = import.meta.env.PUBLIC_CAL_LINK): string {
+  const value = raw ? stripQuotes(raw) : '';
+  if (!value) return SITE.mailto(subject);
+  if (/^https?:\/\//i.test(value)) return value;
+  return `https://cal.com/${value.replace(/^\/+/, '')}`;
+}
 
 export const PERSON_JSON_LD = {
   '@context': 'https://schema.org',

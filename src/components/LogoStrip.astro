@@ -1,0 +1,25 @@
+---
+import type { Logo } from '../content/schemas';
+interface Props { logos: Logo[]; label?: string }
+const { logos, label = 'Spoken at' } = Astro.props;
+---
+<div class="strip" data-reveal>
+  <div class="wrap strip__row">
+    <span class="eyebrow">{label}</span>
+    {logos.map((l) => (
+      <span class="strip__logo">
+        <img src={l.src} alt={l.name} height={l.height} style={`height:${l.height}px`} loading="lazy" />
+        {l.wordmark && <span class="strip__wordmark">{l.wordmark}</span>}
+      </span>
+    ))}
+  </div>
+</div>
+<style>
+  .strip { background: var(--color-surface-2); border-top: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line); padding: 1.5rem 0; }
+  .strip__row { display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap; }
+  .strip__logo { display: inline-flex; align-items: center; gap: 0.625rem; }
+  .strip__logo img { width: auto; filter: grayscale(1); opacity: 0.7; }
+  @media (prefers-reduced-motion: no-preference) { .strip__logo img { transition: filter var(--dur-fast), opacity var(--dur-fast); } }
+  .strip__logo:hover img { filter: none; opacity: 1; }
+  .strip__wordmark { font-family: var(--font-serif); font-size: 1.1875rem; color: var(--color-muted); }
+</style>

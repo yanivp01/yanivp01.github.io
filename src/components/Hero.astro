@@ -1,0 +1,59 @@
+---
+import NetworkGraph from './NetworkGraph.astro';
+import { bookingHref } from '../lib/site';
+
+const talkHref = bookingHref('Speaking enquiry');
+const talkIsExternal = /^https?:\/\//i.test(talkHref);
+---
+<section class="hero" data-hero>
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="eyebrow" data-hero-item>Researcher &amp; Strategist &nbsp;·&nbsp; AI Engineer &nbsp;·&nbsp; Public Speaker</p>
+      <h1 data-hero-item>I study how things spread through networks<br /><em>money, risk, ideas</em><br />and build the systems that steer them.</h1>
+      <p class="hero__lede" data-hero-item>I <strong class="verb">speak</strong>, <strong class="verb">teach</strong> and <strong class="verb">build</strong> across <span class="subj">AI</span>, <span class="subj">supply-chain finance</span> and <span class="subj">innovation ecosystems</span>.</p>
+      <ul class="roles" data-hero-item>
+        <li>PhD, University of Cambridge<br />Institute for Manufacturing</li>
+        <li>AI Engineer, AIOS</li>
+        <li>Director of Research, Global Cambridge</li>
+        <li>Co-founder, Venture Scholar Studio</li>
+      </ul>
+      <div class="hero__actions" data-hero-item>
+        <a class="btn" href={talkHref} {...(talkIsExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>Book a talk</a>
+        <a class="btn btn--ghost" href="/research">See the research</a>
+      </div>
+    </div>
+    <div class="hero__visual" data-hero-graph>
+      <img class="hero__portrait" src="/pictures/yaniv standing.jpg" alt="" width="600" height="600" loading="eager" />
+      <NetworkGraph mode="hero" />
+    </div>
+  </div>
+</section>
+
+<script>
+  import { heroEntrance } from '../lib/motion';
+  const root = document.querySelector<HTMLElement>('[data-hero]');
+  if (root) heroEntrance(root);
+</script>
+
+<style>
+  .hero { background: var(--color-surface); min-height: calc(100vh - 72px); max-height: 960px; display: flex; align-items: center; padding: 4rem 0; }
+  .hero__grid { display: grid; grid-template-columns: 7fr 5fr; gap: 3rem; align-items: center; }
+  .hero__text { display: flex; flex-direction: column; gap: 1.375rem; }
+  .hero h1 { font-size: clamp(2.75rem, 6vw, 4.875rem); }
+  .hero__lede { font-size: 1.1875rem; max-width: 600px; }
+  .verb { font-weight: 600; color: var(--color-ink); border-bottom: 2px solid transparent; }
+  .subj { border-radius: 4px; padding: 0 3px; margin: 0 -3px; }
+  @media (prefers-reduced-motion: no-preference) {
+    .verb, .subj { transition: color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease); }
+  }
+  .verb:hover { color: var(--color-accent); border-bottom-color: var(--color-accent); }
+  .subj:hover { color: var(--color-accent-2); background: var(--color-accent-soft); }
+  .roles { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.625rem 1.75rem; max-width: 600px; font-size: 0.9375rem; line-height: 1.45; }
+  .roles li { display: flex; gap: 0.75rem; align-items: baseline; }
+  .roles li::before { content: ''; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--color-accent); transform: translateY(-3px); }
+  .hero__actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.375rem; }
+  .hero__visual { position: relative; min-height: 460px; }
+  .hero__portrait { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg); filter: grayscale(1); opacity: 0.12; }
+  @media (max-width: 1023px) { .hero__grid { grid-template-columns: 1fr; } .hero__visual { min-height: 320px; } }
+  @media (max-width: 600px) { .roles { grid-template-columns: 1fr; } }
+</style>

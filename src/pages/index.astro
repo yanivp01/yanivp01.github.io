@@ -1,3 +1,24 @@
 ---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import LogoStrip from '../components/LogoStrip.astro';
+import Lanes from '../components/Lanes.astro';
+import FeaturedWork from '../components/FeaturedWork.astro';
+import EssayList from '../components/EssayList.astro';
+import ClosingBand from '../components/ClosingBand.astro';
+import { SITE } from '../lib/site';
+const logos = (await getCollection('logos')).map((l) => l.data);
 ---
-<html lang="en"><head><meta charset="utf-8"><title>Dr. Yaniv Proselkov</title></head><body><h1>Rebuild in progress</h1></body></html>
+<Base title="AI Engineer, Researcher & Public Speaker" description={SITE.description}>
+  <Hero />
+  <LogoStrip logos={logos} />
+  <Lanes />
+  <FeaturedWork />
+  <EssayList />
+  <ClosingBand />
+</Base>
+<script>
+  import { reveal } from '../lib/motion';
+  reveal();
+</script>
