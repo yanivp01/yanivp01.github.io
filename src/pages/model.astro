@@ -15,7 +15,7 @@ const pdfs = [
       <div class="section-head">
         <p class="eyebrow">Ecosystem Model</p>
         <h1>A six-layer production model for startup creation.</h1>
-        <p class="small">Each node is an intervention with its own inputs, efforts and outputs; together they form a supply network for venture generation. Rotate the 3D view, or click a node below to open its node-star view.</p>
+        <p class="small">Each node is an intervention with its own inputs, efforts and outputs; together they form a supply network for venture generation. Drag to rotate; click a node to open its node-star view.</p>
       </div>
       <ul class="legend">{LAYERS.map((l) => <li><span class="dot" style={`background:${l.color}`}></span>Layer {l.n}: {l.name}</li>)}</ul>
       <NetworkGraph mode="full" />
