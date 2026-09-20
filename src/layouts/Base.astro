@@ -1,0 +1,43 @@
+---
+import { SEO } from 'astro-seo';
+import '../styles/global.css';
+import Analytics from '../components/Analytics.astro';
+import { PERSON_JSON_LD, SITE } from '../lib/site';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  type?: 'website' | 'article' | 'profile';
+  jsonLd?: object;
+}
+const { title, description, ogImage = SITE.defaultOgImage, type = 'website', jsonLd = PERSON_JSON_LD } = Astro.props;
+const fullTitle = `${title} – ${SITE.name}`;
+const canonical = new URL(Astro.url.pathname, SITE.url).toString();
+const absoluteImage = new URL(ogImage, SITE.url).toString();
+---
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0e0e10" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <SEO
+      title={fullTitle}
+      description={description}
+      canonical={canonical}
+      openGraph={{
+        basic: { title: fullTitle, type, image: absoluteImage, url: canonical },
+        optional: { description, siteName: SITE.name, locale: 'en_GB' },
+      }}
+      twitter={{ card: 'summary_large_image', title: fullTitle, description, image: absoluteImage }}
+    />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <slot name="head" />
+    <Analytics />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
