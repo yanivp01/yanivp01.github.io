@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import NetworkGraph from '../components/NetworkGraph.astro';
+import ClosingBand from '../components/ClosingBand.astro';
+import { LAYERS } from '../lib/ecosystem-model';
+const pdfs = [
+  { label: 'Systematising startup creation in Cambridge', href: '/papers_pdf/think_tank_pieces/Systematising_Startup_Creation_in_Cambridge_A_Five_Layer_Production_Model_for_Retained_Innovation.pdf' },
+  { label: 'Scaling out the Cambridge innovation ecosystem', href: '/papers_pdf/think_tank_pieces/AI_Native_Infrastructure_for_Ecosystem_Automation__Fintech_Integration__and_Global_Hub_Connectivity.pdf' },
+  { label: 'Scaling businesses out of Cambridge', href: '/papers_pdf/think_tank_pieces/Scaling%20Businesses%20Out%20of%20Cambridge.pdf' },
+];
+---
+<Base title="Ecosystem Model" description="An interactive six-layer model of how the Cambridge innovation ecosystem produces, funds and retains startups — 22 interventions and the flows between them.">
+  <section class="section section--surface">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Ecosystem Model</p>
+        <h1>A six-layer production model for startup creation.</h1>
+        <p class="small">Each node is an intervention with its own inputs, efforts and outputs; together they form a supply network for venture generation. Rotate the 3D view, or click a node below to open its node-star view.</p>
+      </div>
+      <ul class="legend">{LAYERS.map((l) => <li><span class="dot" style={`background:${l.color}`}></span>Layer {l.n}: {l.name}</li>)}</ul>
+      <NetworkGraph mode="full" />
+      <div class="pdfs">{pdfs.map((p) => <a class="btn btn--ghost" href={p.href} target="_blank" rel="noopener noreferrer">⬇ {p.label}</a>)}</div>
+    </div>
+  </section>
+  <ClosingBand heading="Want this model applied to your ecosystem?" />
+</Base>
+<style>
+  .legend { list-style: none; display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin-bottom: 1.5rem; font-size: 0.875rem; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 0.5rem; }
+  .pdfs { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+</style>

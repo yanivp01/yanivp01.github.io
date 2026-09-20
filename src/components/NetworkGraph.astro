@@ -1,0 +1,41 @@
+---
+import '../styles/network.css';
+interface Props { mode: 'hero' | 'full' }
+const { mode } = Astro.props;
+---
+<div class:list={['network', `network--${mode}`]} data-network={mode}>
+  <div class="network__3d" aria-hidden="true"></div>
+  <div class="network__2d"></div>
+  <noscript><p class="small">Enable JavaScript to explore the interactive ecosystem model.</p></noscript>
+</div>
+
+<script>
+  const roots = document.querySelectorAll<HTMLElement>('[data-network]');
+  const motionOK = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
+  const webgl = (() => { try { const c = document.createElement('canvas'); return !!(c.getContext('webgl2') || c.getContext('webgl')); } catch { return false; } })();
+
+  roots.forEach(async (root) => {
+    const mode = root.dataset.network as 'hero' | 'full';
+    const el3d = root.querySelector<HTMLElement>('.network__3d')!;
+    const el2d = root.querySelector<HTMLElement>('.network__2d')!;
+    if (motionOK && webgl) {
+      const { mountNetwork3D } = await import('../lib/network-3d');
+      const start = () => mountNetwork3D(el3d, { autoRotate: true, interactive: mode === 'full' });
+      if (mode === 'hero' && 'requestIdleCallback' in window) (window as any).requestIdleCallback(start); else start();
+      if (mode === 'hero') return; // hero is decorative; no 2D UI
+    } else {
+      el3d.remove();
+    }
+    const { mountNetwork2D } = await import('../lib/network-2d');
+    mountNetwork2D(el2d, { interactive: mode === 'full' });
+  });
+</script>
+
+<style>
+  .network { position: relative; }
+  .network--hero { height: 460px; }
+  .network--hero .network__3d { position: absolute; inset: 0; }
+  .network--hero .network__2d { display: none; }
+  .network--full .network__3d { height: 560px; border: 1px solid var(--color-line); border-radius: var(--radius-lg); background: var(--color-surface); margin-bottom: 2rem; overflow: hidden; }
+  @media (prefers-reduced-motion: reduce) { .network--hero .network__2d { display: block; } }
+</style>
