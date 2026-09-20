@@ -50,3 +50,7 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     .site-nav a { font-size: 1.25rem; }
   }
 </style>
+
+<style is:global>
+  body.nav-open { overflow: hidden; }
+</style>
