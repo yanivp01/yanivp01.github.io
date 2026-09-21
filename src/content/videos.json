@@ -1,0 +1,21 @@
+[
+  {
+    "id": "ai-native-startups-caribbean",
+    "title": "How to Launch an AI-Native Startup in the Caribbean",
+    "event": "Panel · Founder Institute Caribbean",
+    "date": "2026-05",
+    "youtube": "NLF6-ZyGVbA",
+    "mp4": "/videos/ai_native_startups_caribbean.mp4",
+    "summary": "What it actually means to build an AI-native startup from day one: nativity versus feature-layering, data versus refining infrastructure, and why knowledge integration is the moat.",
+    "speakers": ["Dr. Yaniv Proselkov", "Saelese Haynes-Romany", "Lissette Anez", "Andy Karuza", "Shruti Kubér"]
+  },
+  {
+    "id": "ai-future-of-finance",
+    "title": "AI & the Future of Finance",
+    "event": "Keynote & panel · London Jewish Finance Network",
+    "date": "2025",
+    "mp4": "/videos/london_jewish_finance_network.mp4",
+    "summary": "How artificial intelligence is transforming capital allocation, risk modelling and financial infrastructure.",
+    "speakers": ["Dr. Yaniv Proselkov"]
+  }
+]

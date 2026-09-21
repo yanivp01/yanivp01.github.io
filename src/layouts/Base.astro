@@ -1,0 +1,64 @@
+---
+import { SEO } from 'astro-seo';
+import '../styles/global.css';
+import Analytics from '../components/Analytics.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { PERSON_JSON_LD, SITE } from '../lib/site';
+// Preloaded so the above-the-fold hero (h1 in Instrument Serif, body copy in
+// Geist) paints in its final font on first render instead of swapping in
+// after the stylesheet's @font-face loads — the swap was reflowing the large
+// clamp()-sized h1 and driving Cumulative Layout Shift.
+import instrumentSerif from '@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2?url';
+import geist from '@fontsource-variable/geist/files/geist-latin-wght-normal.woff2?url';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  type?: 'website' | 'article' | 'profile';
+  jsonLd?: object;
+}
+const { title, description, ogImage = SITE.defaultOgImage, type = 'website', jsonLd = PERSON_JSON_LD } = Astro.props;
+const fullTitle = `${title} – ${SITE.name}`;
+
+// Under `build.format: 'file'`, Astro.url.pathname carries a trailing `.html`
+// (e.g. `/about.html`), which would otherwise leak into the canonical URL and
+// og:url. Normalise it back to the clean route the site actually serves.
+function normalizePathname(pathname: string): string {
+  const stripped = pathname.replace(/\.html$/, '');
+  if (stripped === '/index' || stripped === '') return '/';
+  return stripped;
+}
+const canonical = new URL(normalizePathname(Astro.url.pathname), SITE.url).toString();
+const absoluteImage = new URL(ogImage, SITE.url).toString();
+---
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0e0e10" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href={instrumentSerif} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={geist} as="font" type="font/woff2" crossorigin />
+    <SEO
+      title={fullTitle}
+      description={description}
+      canonical={canonical}
+      openGraph={{
+        basic: { title: fullTitle, type, image: absoluteImage, url: canonical },
+        optional: { description, siteName: SITE.name, locale: 'en_GB' },
+      }}
+      twitter={{ card: 'summary_large_image', title: fullTitle, description, image: absoluteImage }}
+    />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <slot name="head" />
+    <Analytics />
+  </head>
+  <body>
+    <Header />
+    <main id="main"><slot /></main>
+    <Footer />
+  </body>
+</html>

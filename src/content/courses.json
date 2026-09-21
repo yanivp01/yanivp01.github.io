@@ -1,0 +1,39 @@
+[
+  {
+    "id": "entrepreneurship",
+    "title": "Entrepreneurship — experiential course and placement",
+    "format": "One lecture per week plus thematic homework alongside a real startup; office hours with active startup operators",
+    "duration": "8 weeks",
+    "audience": ["Postgraduates", "Executives"],
+    "languages": ["English", "Chinese (with interpreter)"],
+    "summary": "Knowledge made practical by pairing every lecture with work inside a live venture — from converting an idea into a company through to pitching it.",
+    "modules": [
+      { "title": "Introduction to the concept" },
+      { "title": "Converting ideas into ventures" },
+      { "title": "Startup and market evaluation" },
+      { "title": "Customer discovery and validation" },
+      { "title": "Business modelling" },
+      { "title": "Fundraising and financial structuring" },
+      { "title": "Leadership and teamwork" },
+      { "title": "Growth and scaling" },
+      { "title": "Pitching and storytelling" }
+    ]
+  },
+  {
+    "id": "digital-technology-in-business",
+    "title": "Digital Technology in Business — modular series",
+    "format": "Standalone lectures or a sequenced series; each module runs 60–120 minutes",
+    "duration": "6–15+ hours",
+    "audience": ["Executives", "Postgraduates", "Researchers"],
+    "languages": ["English", "Chinese (with interpreter)"],
+    "summary": "Around six hours of refined material on advanced digital technology applied to modern business, extensible to fifteen or more by drawing on published research.",
+    "modules": [
+      { "title": "Complex Networks in Alternative Finance", "blurb": "Venture capital and supply-chain financing; the mathematics of networks and network effects." },
+      { "title": "AI in Supply Chains", "blurb": "The most refined and most-requested talk: problems and solutions of supply chains; definition, application and implications of AI." },
+      { "title": "Risks of AI", "blurb": "Detailed case studies of AI failure in business, their causes and mitigations." },
+      { "title": "Interactive Supply Chain Management Game", "blurb": "Hosting the beer game — the challenges and dynamics of supply-chain management, played live." },
+      { "title": "AI in Entrepreneurship", "blurb": "How to create new AI businesses; landscaping the venture ecosystem and how participants leverage AI." },
+      { "title": "Innovation Ecosystemics", "blurb": "Methods and theory for developing innovation hubs: blockchain, cultural management, scaling and organisational dynamics." }
+    ]
+  }
+]

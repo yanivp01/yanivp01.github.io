@@ -1,0 +1,25 @@
+---
+import { Icon } from 'astro-icon/components';
+import { SITE } from '../lib/site';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__links">
+      <a class="pill" href={SITE.linkedin} target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:linkedin" size={16} /> LinkedIn</a>
+      <a class="pill" href={SITE.scholar} target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:googlescholar" size={16} /> Google Scholar</a>
+      <a class="pill" href={SITE.researchgate} target="_blank" rel="noopener noreferrer"><Icon name="simple-icons:researchgate" size={16} /> ResearchGate</a>
+    </div>
+    <img class="site-footer__mark" src="/pictures/logo-inverted.svg" alt="" width="32" height="32" />
+    <p class="site-footer__meta"><a href="/sitemap-index.xml">Sitemap</a> · © {year} Dr. Yaniv Proselkov</p>
+  </div>
+</footer>
+<style>
+  .site-footer { background: var(--color-ink); color: rgba(255,255,255,0.85); padding: 3rem 0 2.5rem; text-align: center; }
+  .site-footer__links { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .pill { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; border-radius: var(--radius-pill); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.85); font-size: 0.8125rem; font-weight: 500; }
+  .pill:hover { background: rgba(255,255,255,0.1); color: #fff; }
+  .site-footer__mark { margin: 0 auto 1rem; opacity: 0.9; }
+  .site-footer__meta { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.6); }
+  .site-footer__meta a { color: inherit; }
+</style>

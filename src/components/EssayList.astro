@@ -1,0 +1,13 @@
+---
+import EssayCard from './EssayCard.astro';
+import { getEssays } from '../lib/essays';
+const essays = (await getEssays()).slice(0, 3);
+---
+<section class="section section--bg">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Latest essays</p><h2>Recent writing.</h2></div>
+    <div data-reveal>{essays.map((e) => <EssayCard essay={e} compact />)}</div>
+    <p class="more"><a href="/essays">All essays →</a></p>
+  </div>
+</section>
+<style>.more { margin-top: 1.5rem; font-weight: 500; }</style>

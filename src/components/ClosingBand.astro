@@ -1,0 +1,16 @@
+---
+import { SITE } from '../lib/site';
+interface Props { heading?: string }
+const { heading = 'Working on something at the intersection of networks, capital and AI?' } = Astro.props;
+---
+<section class="band">
+  <div class="wrap band__inner">
+    <h2>{heading}</h2>
+    <a class="btn" href={SITE.mailto('Enquiry via yapros.co.uk')}>Get in touch</a>
+  </div>
+</section>
+<style>
+  .band { background: var(--color-ink); color: #fff; padding: 5rem 0; }
+  .band__inner { display: flex; flex-direction: column; align-items: flex-start; gap: 1.75rem; max-width: 760px; }
+  .band h2 { color: #fff; font-size: clamp(2rem, 4vw, 3rem); }
+</style>

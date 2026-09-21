@@ -1,0 +1,289 @@
+/* ============================================================
+   Interactive Node-Star Network (2D)
+   Ported from _legacy/css/network.css. Page-shell rules (.network-page,
+   .network-hero) dropped; --color-border -> --color-line and
+   --color-primary -> --color-ink to match src/styles/global.css tokens.
+   The DOM is built by src/lib/network-2d.ts inside .network__2d.
+   ============================================================ */
+
+/* Toolbar */
+.network-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+
+.view-toggle {
+  display: inline-flex;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.view-toggle button {
+  background: transparent;
+  border: none;
+  padding: .45rem .9rem;
+  font-size: .85rem;
+  color: var(--color-muted);
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.view-toggle button.active {
+  background: var(--color-ink);
+  color: #fff;
+}
+
+.view-toggle button:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+.network-hint {
+  font-size: .8rem;
+  color: var(--color-muted);
+}
+
+/* Main layout */
+.network-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .network-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.network-canvas {
+  position: relative;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 560px;
+}
+
+.network-canvas svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  min-height: 560px;
+}
+
+.network-canvas .canvas-helper {
+  position: absolute;
+  bottom: .8rem;
+  left: 1rem;
+  font-size: .75rem;
+  color: var(--color-muted);
+  pointer-events: none;
+}
+
+.network-canvas .back-button {
+  position: absolute;
+  top: .8rem;
+  left: .8rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  padding: .35rem .7rem;
+  border-radius: 6px;
+  font-size: .8rem;
+  color: var(--color-muted);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.network-canvas .back-button:hover {
+  color: var(--color-ink);
+  border-color: var(--color-accent);
+}
+
+/* Sidebar */
+.network-sidebar {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  align-self: start;
+  font-size: .9rem;
+}
+
+.network-sidebar h3 {
+  font-size: 1rem;
+  color: var(--color-ink);
+  margin-bottom: .8rem;
+}
+
+.network-sidebar h4 {
+  font-size: .85rem;
+  margin: 1rem 0 .4rem;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.network-sidebar ul {
+  list-style: disc;
+  padding-left: 1.1rem;
+  color: var(--color-muted);
+  font-size: .82rem;
+}
+
+.network-sidebar ul li {
+  margin-bottom: .15rem;
+}
+
+.layer-row {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  margin-bottom: .4rem;
+  font-size: .85rem;
+  color: var(--color-text);
+}
+
+.layer-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.node-header {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  margin-bottom: .4rem;
+}
+
+.node-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: .82rem;
+  flex-shrink: 0;
+}
+
+.node-title {
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.25;
+  font-size: .95rem;
+}
+
+.node-sublabel {
+  font-size: .75rem;
+  color: var(--color-muted);
+}
+
+.edge-list {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.edge-list button {
+  text-align: left;
+  background: var(--color-bg);
+  border: 1px solid var(--color-line);
+  border-radius: 4px;
+  padding: .3rem .5rem;
+  font-size: .76rem;
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+.edge-list button:hover {
+  border-color: var(--color-accent);
+}
+
+.edge-list .edge-id {
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.edge-list .edge-label {
+  color: var(--color-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.empty-edges {
+  font-size: .76rem;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.sidebar-divider {
+  border: none;
+  border-top: 1px solid var(--color-line);
+  margin: 1rem 0 .6rem;
+}
+
+.view-star-btn {
+  margin-top: 1rem;
+  width: 100%;
+  background: var(--color-ink);
+  color: #fff;
+  padding: .55rem;
+  border: none;
+  border-radius: 6px;
+  font-size: .85rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.view-star-btn:hover {
+  background: var(--color-accent);
+}
+
+/* SVG node hover */
+.node-group { cursor: pointer; }
+@media (prefers-reduced-motion: no-preference) {
+  .node-group circle { transition: r .15s ease; }
+}
+.node-group:hover circle.node-bg { filter: brightness(1.1); }
+
+/* Sidebar legend section */
+.sidebar-section + .sidebar-section {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-line);
+}
+
+/* Non-interactive (hero / reduced-motion fallback): canvas only, no cursor affordance */
+.network-layout--static { grid-template-columns: 1fr; margin-bottom: 0; }
+.node-group--static { cursor: default; }
+.node-group--static:hover circle.node-bg { filter: none; }
+
+/* Hero fallback (reduced motion / no WebGL / 3D failed): fit the 2D canvas to the 460px hero */
+.network--hero .network__2d .network-canvas { min-height: 0; height: 460px; }
+.network--hero .network__2d .network-canvas svg { min-height: 0; }

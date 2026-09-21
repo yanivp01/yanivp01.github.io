@@ -1,0 +1,96 @@
+---
+import { Accordion, AccordionItem } from 'accessible-astro-components';
+import Base from '../layouts/Base.astro';
+import ClosingBand from '../components/ClosingBand.astro';
+import { PERSON_JSON_LD, SITE } from '../lib/site';
+const highlights = [
+  ['7', 'peer-reviewed papers on network science, agent-based modelling and autonomous supply chains'],
+  ['15+', 'invited talks — LBS, Barclays, Imperial, the Alan Turing Institute, Cambridge Judge, BT, CSH Vienna'],
+  ['2', 'languages of delivery: English, and Chinese with live interpretation'],
+  ['1,100', 'innovation stakeholders in the Global Cambridge community whose perspectives shape his reports'],
+];
+---
+<Base title="About" description="Biography of Dr. Yaniv Proselkov — Cambridge PhD in autonomous network control, AI Engineer at AIOS, Director of Research at Global Cambridge, speaker and lecturer." type="profile" ogImage="/pictures/yaniv speaking.jpg" jsonLd={PERSON_JSON_LD}>
+  <section class="section section--surface">
+    <div class="prose">
+      <p class="eyebrow">About</p>
+      <h1>Networks, all the way down.</h1>
+      <img class="portrait" src="/pictures/yaniv speaking.jpg" alt="Dr. Yaniv Proselkov speaking at an event" width="1200" height="800" />
+      <p>I'm Yaniv Proselkov. My PhD at Cambridge's Institute for Manufacturing asked a simple question about complicated systems: how much do the parts of a network need to know about each other for the whole to stay resilient? The answer — surprisingly little — turned into new AI models for telecoms and supply-chain finance, and a way of thinking I've applied ever since.</p>
+      <p>Today I work on three fronts. As an <strong>AI Engineer at AIOS</strong> I build modular AI workflows and educational skill pipelines. As <strong>Director of Research at Global Cambridge</strong> I write the strategy for how a science-led city produces, funds and retains its startups, synthesising a community of over a thousand founders, investors and academics. And as a <strong>co-founder of Venture Scholar Studio</strong> I teach entrepreneurship to international students inside real ventures.</p>
+      <p>Before that: quantitative finance research at Fasanara Capital, a venture associate role via VC Lab, and a six-year doctoral stretch in the Supply Chain AI Lab where I co-authored papers on financial ripple effects, decentralised criticality and autonomous supply chains. I speak and lecture on all of it — in English, and in Chinese with an interpreter.</p>
+      <p>Outside work I hold a 1st Dan black belt in Shotokan karate and compete in ballroom and Latin dance — the 61st Inter-Varsity Championships in Blackpool, most recently.</p>
+    </div>
+  </section>
+
+  <section class="section section--bg" id="work">
+    <div class="wrap">
+      <div class="highlights">{highlights.map(([n, t]) => <div class="card hl"><span class="hl__n">{n}</span><span class="small">{t}</span></div>)}</div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="prose">
+      <div class="section-head"><p class="eyebrow">Curriculum vitae</p><h2>The full record.</h2></div>
+      <Accordion>
+        <AccordionItem title="Education">
+          <p><strong>PhD Engineering — University of Cambridge</strong> (2019–2025). Institute for Manufacturing | Christ's College. Thesis: <em>Scalable Autonomous Network Control using Minimally Informed Agents</em>. Full scholarship (EPSRC &amp; BT Prosperity Partnership; Cambridge EPSRC-DTP Award).</p>
+          <p><strong>MSc Engineering Mathematics — University of Bristol</strong> (2017–2019). Distinction; "Best Student" award. Industrial project optimising the Royal Mail National Distribution Centre — docking-time efficiency up 16%.</p>
+          <p><strong>BSc (Hons) Mathematics — University of Bristol</strong> (2014–2017). Thesis on bounds of the 3-state misanthrope interacting particle system.</p>
+        </AccordionItem>
+        <AccordionItem title="Experience">
+          <p><strong>AI Engineer — AIOS</strong> (Dec 2025 – present). Modular AI workflows, business development, educational skill-development pipeline.</p>
+          <p><strong>Director of Research — Global Cambridge</strong> (Aug 2025 – present). Ecosystem strategy and open-innovation reports drawn from a 1,100-person community; partnerships; lecturing on innovation paradigms.</p>
+          <p><strong>Co-Founder — Venture Scholar Studio</strong> (May 2025 – present). Entrepreneurship programme for international students inside real startups; first cohort completed with Global Cambridge and Linkly.</p>
+          <p><strong>Expert Speaker — Cambridge Education International Centre</strong> (May 2024 – present). Lectures and workshops on AI, business, supply chain, finance and complexity, in English and Chinese.</p>
+          <p><strong>Venture Associate — Blue Impact Supply Chain Ventures</strong> (Apr–Jul 2025). Mapped the US supply-chain incubator landscape and LP network; advised a medtech to ~£500k in letters of intent within two weeks.</p>
+          <p><strong>Co-Founder — Diogenes Forum</strong> (Jan–Jun 2023). Academic media group and salon; 6 articles, 7 interviews; Ian McTaggart Grant.</p>
+          <p><strong>Doctoral Researcher — Supply Chain AI Lab, IfM, Cambridge</strong> (Oct 2019 – May 2025). Six peer-reviewed papers; organised conferences and workshops; international speaker.</p>
+          <p><strong>Quantitative Finance Researcher — Fasanara Capital</strong> (Dec 2018 – Oct 2019). AI risk models for P2P supply-chain and SME financing; debtor–supplier network pipeline; whitepapers on systemic risk.</p>
+        </AccordionItem>
+        <AccordionItem title="Ventures &amp; programmes">
+          <ul class="cv-list">
+            <li><strong>Bluedot AGI Strategy Course</strong> (2025)</li>
+            <li><strong>Silkwork</strong>, Accelerate Cambridge, Judge Business School (2025) — AI recruitment platform; team of 12; partnerships with KIMEP, Satbayev and Nazarbayev universities</li>
+            <li><strong>EnterpriseTECH</strong>, Judge Business School (2023)</li>
+            <li><strong>Monadrix</strong>, CRoSS, Cambridge Enterprise (2022) — AI fintech for cofounder-based quant financing</li>
+            <li><strong>Como Advanced Studies School</strong>, Fondazione Alessandro Volta (2022)</li>
+            <li><strong>Yapros</strong>, Impulse, Maxwell Centre (2021) — deeptech incubator; scientific collaboration network</li>
+          </ul>
+        </AccordionItem>
+        <AccordionItem title="Funding &amp; awards">
+          <ul class="cv-list">
+            <li>Cambridge Philosophical Society Research Studentship Funding Award (2024)</li>
+            <li>Winner — 3 Minute Supply Chain Thesis Competition, Anglia Ruskin (2024)</li>
+            <li>Ian Mactaggart Programme Student Society Award (2023)</li>
+            <li>CRoSS Ideas Incubator Bursary Award (2023)</li>
+            <li>EPSRC &amp; BT Prosperity Partnership: NG-CDI, Grant EP/R004935/1 (2019)</li>
+            <li>UK EPSRC-DTP Award, Grant EP/R513180/1 (2019)</li>
+            <li>Engineering Mathematics MSc Best Student Award (2019)</li>
+          </ul>
+        </AccordionItem>
+        <AccordionItem title="Volunteering &amp; interests">
+          <ul class="cv-list">
+            <li><strong>BANGTech Space Program</strong> — teaching kids tech entrepreneurship via gamified residentials in the UK and UAE</li>
+            <li><strong>EnterpriseTECH Buddy</strong>; <strong>Innovation Forum</strong> — led the Cambridge branch in 2021</li>
+            <li><strong>Karate</strong> — 1st Dan, Shotokan; 5th Kyu, Goju Ryu. <strong>Ballroom &amp; Latin</strong> — Bronze; 61st Inter-Varsity Dance Championships, Blackpool (2024)</li>
+            <li><strong>Languages</strong> — English (native), Russian (beginner)</li>
+          </ul>
+        </AccordionItem>
+      </Accordion>
+      <p class="links"><a href={SITE.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a> · <a href={SITE.scholar} target="_blank" rel="noopener noreferrer">Google Scholar ↗</a> · <a href={SITE.researchgate} target="_blank" rel="noopener noreferrer">ResearchGate ↗</a></p>
+    </div>
+  </section>
+  <ClosingBand />
+</Base>
+<style>
+  .portrait { margin: 1.5rem 0 2rem; border-radius: var(--radius-lg); aspect-ratio: 3/2; object-fit: cover; }
+  .prose p + p { margin-top: 1.25rem; }
+  .highlights { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
+  .hl { display: flex; flex-direction: column; gap: 0.5rem; }
+  .hl__n { font-family: var(--font-serif); font-size: 3rem; color: var(--color-accent); line-height: 1; }
+  .links { margin-top: 2rem; font-weight: 500; }
+  :global(details.wrapper .content p + p) { margin-top: 0.75rem; }
+  .cv-list { list-style: disc; padding-left: 1.25rem; display: grid; gap: 0.5rem; }
+  @media (max-width: 800px) { .highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>

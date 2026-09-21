@@ -1,0 +1,20 @@
+---
+import type { Video } from '../content/schemas';
+interface Props { video: Video }
+const { video } = Astro.props;
+---
+<article class="video">
+  {video.youtube ? (
+    <iframe src={`https://www.youtube-nocookie.com/embed/${video.youtube}`} title={video.title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  ) : video.mp4 ? (
+    <video controls preload="metadata" src={video.mp4}></video>
+  ) : null}
+  <h3>{video.title}</h3>
+  <p class="meta">{video.event} · {video.date}</p>
+  <p class="small">{video.summary}</p>
+  {video.mp4 && <p class="small"><a href={video.mp4} download>Download video (.mp4)</a></p>}
+</article>
+<style>
+  .video iframe, .video video { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: var(--radius-lg); background: var(--color-ink); margin-bottom: 1rem; }
+  .video h3 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+</style>

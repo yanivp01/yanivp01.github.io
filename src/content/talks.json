@@ -1,0 +1,349 @@
+[
+  {
+    "id": "enabling-viable-supply-networks-with-cooperative-distributed",
+    "title": "Enabling Viable Supply Networks with Cooperative Distributed Locally Decentralised Financial Control",
+    "byline": "Y Proselkov, L Xu, A Brintrup (2024). Conference on Complex Systems & Satellite on Collective Intelligence (AI4CI), Exeter, UK.",
+    "blurb": "Presentation on viable supply networks and cooperative locally decentralised financial control mechanisms.",
+    "image": {
+      "src": "/pictures/talk_ccs_exeter_2024.jpg",
+      "alt": "Yaniv Proselkov presenting at Conference on Complex Systems Exeter 2024"
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "arXiv Paper",
+        "href": "https://arxiv.org/abs/2601.13210"
+      },
+      {
+        "kind": "ext",
+        "label": "LinkedIn Update",
+        "href": "https://www.linkedin.com/feed/update/urn:li:activity:7239325965040979968"
+      }
+    ],
+    "kind": "conference",
+    "year": 2024,
+    "featured": false
+  },
+  {
+    "id": "triple-jumping-over-fragmentation-epidemics-and-spontaneous-",
+    "title": "Triple-Jumping over Fragmentation, Epidemics, and Spontaneous Adaption",
+    "byline": "Y Proselkov, T Gross, A Brintrup, AK Parlikad (2022). Conference on Complex Systems, Palma de Mallorca, Spain.",
+    "blurb": "Discusses fragmentation, epidemics, and adaptation within complex networks.",
+    "image": {
+      "src": "/pictures/adaptive_voter.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "ResearchGate",
+        "href": "https://www.researchgate.net/publication/364699939_Triple-Jumping_over_Fragmentation_Epidemics_and_Spontaneous_Adaption"
+      }
+    ],
+    "kind": "conference",
+    "year": 2022,
+    "featured": false
+  },
+  {
+    "id": "the-valuation-of-information-by-dynamic-decentralised-critic",
+    "title": "The Valuation of Information by Dynamic Decentralised Criticality Measures in Complex Data Flow Networks",
+    "byline": "Y Proselkov, M Herrera, M Perez-Hernandez, AK Parlikad, A Brintrup (2022). Complex Networks & Their Applications, Palermo, Italy.",
+    "blurb": "Explores how dynamic, decentralised criticality measures assign value to information flowing through complex networks.",
+    "image": {
+      "src": "/pictures/dist_dyn_graph.png",
+      "alt": ""
+    },
+    "links": [],
+    "kind": "conference",
+    "year": 2022,
+    "featured": false
+  },
+  {
+    "id": "the-value-of-information-for-dynamic-decentralised-criticali",
+    "title": "The Value of Information for Dynamic Decentralised Criticality Computation",
+    "byline": "Y Proselkov, M Herrera, M Perez-Hernandez, AK Parlikad, A Brintrup (2022). IFAC IMS, Tel Aviv, Israel (online).",
+    "blurb": "Presented research on computing decentralised criticality and information value in dynamic systems.",
+    "image": {
+      "src": "/pictures/outer_backbone.png",
+      "alt": ""
+    },
+    "links": [],
+    "kind": "conference",
+    "year": 2022,
+    "featured": false
+  },
+  {
+    "id": "distributed-dynamic-measures-of-criticality-for-telecommunic",
+    "title": "Distributed Dynamic Measures of Criticality for Telecommunication Networks",
+    "byline": "Y Proselkov, M Herrera, AK Parlikad, A Brintrup (2020). SOHOMA, Paris, France (online).",
+    "blurb": "Focuses on applying distributed criticality measures within telecommunication infrastructures.",
+    "image": {
+      "src": "/pictures/telco_network_vis.png",
+      "alt": ""
+    },
+    "links": [],
+    "kind": "conference",
+    "year": 2020,
+    "featured": false
+  },
+  {
+    "id": "venture-creation-innovation-impact-tea-ceremony",
+    "title": "Venture Creation, Innovation & Impact Tea Ceremony",
+    "byline": "Panellist & Co-host (2025–2026). Christ's College, University of Cambridge, UK.",
+    "blurb": "Co-hosted innovation tea ceremony & venture discussion at Christ's College, Cambridge with Shirley Choo, hosting researchers, founders, and investors.",
+    "image": {
+      "src": "/pictures/talk_christs.jpg",
+      "alt": "Yaniv Proselkov co-hosting tea ceremony and venture discussion at Christ's College, Cambridge"
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Post",
+        "href": "https://www.linkedin.com/posts/activity-7402538014947647488-q2jh"
+      }
+    ],
+    "kind": "panel",
+    "year": 2025,
+    "featured": false
+  },
+  {
+    "id": "why-knowledge-rarely-translates-into-capital-allocation",
+    "title": "Why Knowledge Rarely Translates into Capital Allocation",
+    "byline": "Panellist (2026). London Business School (LBS) — Founders & Investors Alumni Club, London, UK.",
+    "blurb": "Panel discussion on why deep research and technical knowledge rarely translate into capital allocation, and how ecosystem infrastructure can bridge this gap.",
+    "image": {
+      "src": "/pictures/talk_lbs.jpg",
+      "alt": "Yaniv Proselkov speaking on Panel 3 at London Business School"
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Post",
+        "href": "https://www.linkedin.com/posts/activity-7419499786405339136-0E9T"
+      }
+    ],
+    "kind": "panel",
+    "year": 2026,
+    "featured": true
+  },
+  {
+    "id": "past-present-and-future-of-impact-investment",
+    "title": "Past, Present, and Future of Impact Investment",
+    "byline": "Panellist (2026). Barclays & Rathbones Wealth Managers, London, UK.",
+    "blurb": "Roundtable and panel discussion on the evolution of impact investing, capital deployment, and scaling sustainable ventures.",
+    "image": {
+      "src": "/pictures/talk_barclays.jpg",
+      "alt": "Impact Investment conference roundtable at Barclays"
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Post",
+        "href": "https://www.linkedin.com/posts/activity-7300299046311583745-4O3y"
+      }
+    ],
+    "kind": "panel",
+    "year": 2026,
+    "featured": true
+  },
+  {
+    "id": "translational-impact-frameworks-academic-spinoffs",
+    "title": "Translational Impact Frameworks & Academic Spinoffs",
+    "byline": "Panellist / Speaker (2026). Imperial College London, UK.",
+    "blurb": "Panel presentation on measuring real-world impact, commercializing academic IP, and building university-backed innovation pipelines.",
+    "image": {
+      "src": "/pictures/talk_imperial.jpg",
+      "alt": "Yaniv Proselkov presenting on panel at Imperial College London"
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Post",
+        "href": "https://www.linkedin.com/posts/activity-7307170318542925824-fxKw"
+      }
+    ],
+    "kind": "panel",
+    "year": 2026,
+    "featured": true
+  },
+  {
+    "id": "ai-entrepreneurship-innovation-ecosystems",
+    "title": "AI, Entrepreneurship & Innovation Ecosystems",
+    "byline": "Invited Speaker & Panellist (2025–2026). Cambridge Judge Business School, University of Cambridge, UK.",
+    "blurb": "Lectures and panel sessions on AI in business operations, startup scaling, and early-stage venture formation.",
+    "image": {
+      "src": "/pictures/talk_jbs.jpg",
+      "alt": "Yaniv Proselkov speaking at Judge Business School, Cambridge"
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Post",
+        "href": "https://www.linkedin.com/posts/activity-7312877482821525504-T5Lf"
+      }
+    ],
+    "kind": "panel",
+    "year": 2025,
+    "featured": true
+  },
+  {
+    "id": "the-future-of-finance-with-ai-breakfast",
+    "title": "The Future of Finance with AI — Breakfast",
+    "byline": "Speaker (2025). Kolleno, London.",
+    "blurb": "Talk covering the transformative role of artificial intelligence in financial sectors.",
+    "image": {
+      "src": "/pictures/yaniv speaking.jpg",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Profile",
+        "href": "https://www.linkedin.com/in/yaniv-proselkov/"
+      }
+    ],
+    "kind": "keynote",
+    "year": 2025,
+    "featured": false
+  },
+  {
+    "id": "ai-the-future-of-finance",
+    "title": "AI & the Future of Finance",
+    "byline": "Panellist (2025). London Jewish Finance Network.",
+    "blurb": "Discussed upcoming trends in AI application across the finance industry.",
+    "image": {
+      "src": "/pictures/yaniv speaking.jpg",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Profile",
+        "href": "https://www.linkedin.com/in/yaniv-proselkov/"
+      }
+    ],
+    "kind": "panel",
+    "year": 2025,
+    "featured": false
+  },
+  {
+    "id": "ai-in-business",
+    "title": "AI in Business",
+    "byline": "Speaker (2024). Institute for Manufacturing, Cambridge, UK.",
+    "blurb": "Lecture on integrating AI strategically within business operations.",
+    "image": {
+      "src": "/pictures/yaniv presenting.jpg",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Profile",
+        "href": "https://www.linkedin.com/in/yaniv-proselkov/"
+      }
+    ],
+    "kind": "keynote",
+    "year": 2024,
+    "featured": false
+  },
+  {
+    "id": "supply-chain-artificial-intelligence-laboratory",
+    "title": "Supply Chain Artificial Intelligence Laboratory",
+    "byline": "Speaker (2023). AI UK, The Alan Turing Institute, London.",
+    "blurb": "Presented ongoing research into artificial intelligence for supply chains at AI UK.",
+    "image": {
+      "src": "/pictures/talk_turing_aiuk.jpg",
+      "alt": "Supply Chain AI Lab team at AI UK, The Alan Turing Institute"
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Post",
+        "href": "https://www.linkedin.com/posts/activity-7044030722432495617-A39-"
+      }
+    ],
+    "kind": "keynote",
+    "year": 2023,
+    "featured": true
+  },
+  {
+    "id": "financial-ripple-effect-in-complex-adaptive-supply-networks-",
+    "title": "Financial Ripple Effect in Complex Adaptive Supply Networks: An Agent-Based Model",
+    "byline": "Y Proselkov (2023). Complexity Science Hub, Vienna, Austria; also Kolleno Ltd., London.",
+    "blurb": "Invited talk on modeling the propagation of financial distress across supply networks.",
+    "image": {
+      "src": "/pictures/talk_csh_vienna.png",
+      "alt": "Complexity Science Hub Vienna presentation"
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Post",
+        "href": "https://www.linkedin.com/feed/update/urn:li:activity:7057262126783979520"
+      }
+    ],
+    "kind": "keynote",
+    "year": 2023,
+    "featured": true
+  },
+  {
+    "id": "complex-networks-theory-methods-and-applications",
+    "title": "Complex Networks: Theory, Methods, and Applications",
+    "byline": "Y Proselkov (2022). Lake Como School of Advanced Studies, Como, Italy.",
+    "blurb": "Delivered insights into the theory and methodological applications of complex networks.",
+    "image": {
+      "src": "/pictures/dist_dyn_graph.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Profile",
+        "href": "https://www.linkedin.com/in/yaniv-proselkov/"
+      }
+    ],
+    "kind": "keynote",
+    "year": 2022,
+    "featured": false
+  },
+  {
+    "id": "the-valuation-of-information-for-dynamic-decentralised-criti",
+    "title": "The Valuation of Information for Dynamic Decentralised Criticality Computation",
+    "byline": "Y Proselkov, M Herrera, M Perez-Hernandez, AK Parlikad, A Brintrup (2022). NG-CDI Spotlight, BT Headquarters, Martlesham Heath, UK.",
+    "blurb": "Showcased dynamic decentralised computation strategies for information valuation.",
+    "image": {
+      "src": "/pictures/outer_backbone.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Profile",
+        "href": "https://www.linkedin.com/in/yaniv-proselkov/"
+      }
+    ],
+    "kind": "keynote",
+    "year": 2022,
+    "featured": false
+  },
+  {
+    "id": "investigating-the-financial-ripple-effect-in-complex-supply-",
+    "title": "Investigating the Financial Ripple Effect in Complex Supply Networks",
+    "byline": "Y Proselkov, E Hofmann, T Choi, D Rogers, A Brintrup (2021). CASN-RA, W.P. Carey School of Business, Arizona State University, Phoenix, USA (online).",
+    "blurb": "Initial findings on simulating financial ripple effects within supply networks.",
+    "image": {
+      "src": "/pictures/broken_lattice.png",
+      "alt": ""
+    },
+    "links": [
+      {
+        "kind": "ext",
+        "label": "LinkedIn Profile",
+        "href": "https://www.linkedin.com/in/yaniv-proselkov/"
+      }
+    ],
+    "kind": "keynote",
+    "year": 2021,
+    "featured": false
+  }
+]

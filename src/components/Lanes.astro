@@ -1,0 +1,26 @@
+---
+import { Icon } from 'astro-icon/components';
+const lanes = [
+  { title: 'Book a talk', text: 'Keynotes and panels on AI, supply-chain finance and innovation ecosystems. In English or with Chinese interpretation.', href: '/speaking' },
+  { title: 'Commission a course', text: 'From a 90-minute executive session to an 8-week entrepreneurship programme.', href: '/teaching' },
+  { title: 'Collaborate', text: 'Research, venture strategy and ecosystem design with Global Cambridge and partners.', href: '/about#work' },
+];
+---
+<section class="section section--bg">
+  <div class="wrap lanes">
+    {lanes.map((l) => (
+      <a class="card lane" href={l.href} data-reveal>
+        <h3>{l.title}</h3>
+        <p class="small">{l.text}</p>
+        <span class="lane__arrow"><Icon name="lucide:arrow-right" size={18} /></span>
+      </a>
+    ))}
+  </div>
+</section>
+<style>
+  .lanes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+  .lane { display: flex; flex-direction: column; gap: 0.625rem; color: var(--color-text); }
+  .lane h3 { font-size: 1.625rem; }
+  .lane__arrow { margin-top: auto; color: var(--color-accent); }
+  @media (max-width: 800px) { .lanes { grid-template-columns: 1fr; } }
+</style>
