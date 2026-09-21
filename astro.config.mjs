@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 import icon from 'astro-icon';
 
 export default defineConfig({
-  site: 'https://www.yapros.co.uk',
+  site: 'https://yanivp01.github.io',
   output: 'static',
   trailingSlash: 'never',
   build: { format: 'file' },
